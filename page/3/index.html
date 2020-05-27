@@ -2236,7 +2236,7 @@ yskin说eDonkey2000（好吧，就是大家说的电驴）是这样
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.eson.org/pub/9fa270bc/">
+    <link itemprop="mainEntityOfPage" href="https://blog.eson.org/pub/8e7b306/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ESON">
@@ -2255,8 +2255,8 @@ yskin说eDonkey2000（好吧，就是大家说的电驴）是这样
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/pub/9fa270bc/" itemprop="url">
-                  图像风格迁移-Image Style Transfer
+                <a class="post-title-link" href="/pub/8e7b306/" itemprop="url">
+                  反卷积 逆卷积(Deconvolution)  - CNN的逆过程
                 </a>
               
             
@@ -2303,28 +2303,21 @@ yskin说eDonkey2000（好吧，就是大家说的电驴）是这样
                   ，
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/app/" itemprop="url" rel="index"><span itemprop="name">app</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/deep-learning/" itemprop="url" rel="index"><span itemprop="name">deep learning</span></a></span>
 
                 
                 
                   ，
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/app/vision/" itemprop="url" rel="index"><span itemprop="name">vision</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/deep-learning/model-basic/" itemprop="url" rel="index"><span itemprop="name">model-basic</span></a></span>
 
                 
                 
                   ，
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/app/vision/app/" itemprop="url" rel="index"><span itemprop="name">app</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/app/vision/app/style-transfer/" itemprop="url" rel="index"><span itemprop="name">style-transfer</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/deep-learning/model-basic/生成模型/" itemprop="url" rel="index"><span itemprop="name">生成模型</span></a></span>
 
                 
                 
@@ -2388,15 +2381,9 @@ yskin说eDonkey2000（好吧，就是大家说的电驴）是这样
       
         
           
-          简介图片1中的内容 +  图片2中的风格 = 新图片
-难点
-怎样提取出content信息？
-怎样提取出style信息？
-怎样融合content和style？
-
-大佬们围绕这几个点，绞尽脑汁，各显神通。
-核心思想分解我们先从简单问题的入手，问题1看上去好像比较简单。
-怎样提取出content信息？怎样
+          背景众所周知，神经网络分为有向网络，无向网络。典型的无向网络有CRF、Autoencoder、RBM等。由于Autoencoder和RBM是层级结构，也叫双向网络。这种是专门设计的双向网络，具有很好的理论依据(特别是RBM)。用的更多的网络，比如NN、CNN等都是单向网络。
+PGM理论好，实践弱
+概
           ...
           <!--noindex-->
           
