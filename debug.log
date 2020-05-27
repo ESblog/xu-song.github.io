@@ -1,0 +1,706 @@
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Writing database to /Users/xusong/Documents/hexo-blog/db.json","time":"2019-08-27T02:20:16.286Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Hexo version: \u001b[35m3.8.0\u001b[39m","time":"2019-08-27T02:20:16.299Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Working directory: \u001b[35m~/Documents/hexo-blog/\u001b[39m","time":"2019-08-27T02:20:16.299Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Config loaded: \u001b[35m~/Documents/hexo-blog/_config.yml\u001b[39m","time":"2019-08-27T02:20:16.383Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-deployer-git\u001b[39m","time":"2019-08-27T02:20:16.417Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-filter-flowchart\u001b[39m","time":"2019-08-27T02:20:16.419Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-filter-sequence\u001b[39m","time":"2019-08-27T02:20:16.421Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-abbrlink\u001b[39m","time":"2019-08-27T02:20:16.424Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2019-08-27T02:20:16.426Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2019-08-27T02:20:16.427Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-auto-category\u001b[39m","time":"2019-08-27T02:20:16.428Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-search\u001b[39m","time":"2019-08-27T02:20:16.429Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-related-popular-posts\u001b[39m","time":"2019-08-27T02:20:16.439Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2019-08-27T02:20:16.440Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2019-08-27T02:20:16.442Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-kramed\u001b[39m","time":"2019-08-27T02:20:16.449Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2019-08-27T02:20:16.450Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2019-08-27T02:20:16.496Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-tag-chat\u001b[39m","time":"2019-08-27T02:20:16.497Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-tag-instagram\u001b[39m","time":"2019-08-27T02:20:16.497Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-tag-soundcloud\u001b[39m","time":"2019-08-27T02:20:16.498Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-tag-twitter\u001b[39m","time":"2019-08-27T02:20:16.498Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-wordcount\u001b[39m","time":"2019-08-27T02:20:16.533Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2019-08-27T02:20:16.534Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/merge-configs.js\u001b[39m","time":"2019-08-27T02:20:16.541Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/button.js\u001b[39m","time":"2019-08-27T02:20:16.541Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/center-quote.js\u001b[39m","time":"2019-08-27T02:20:16.541Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/helpers.js\u001b[39m","time":"2019-08-27T02:20:16.542Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/exturl.js\u001b[39m","time":"2019-08-27T02:20:16.542Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/full-image.js\u001b[39m","time":"2019-08-27T02:20:16.543Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/group-pictures.js\u001b[39m","time":"2019-08-27T02:20:16.543Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/include-raw.js\u001b[39m","time":"2019-08-27T02:20:16.544Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/label.js\u001b[39m","time":"2019-08-27T02:20:16.544Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/note.js\u001b[39m","time":"2019-08-27T02:20:16.544Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/tabs.js\u001b[39m","time":"2019-08-27T02:20:16.544Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/merge.js\u001b[39m","time":"2019-08-27T02:20:16.547Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Loading database.","time":"2019-08-27T02:20:16.700Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Start processing","time":"2019-08-27T02:20:16.707Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35m404.html\u001b[39m","time":"2019-08-27T02:20:16.730Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mCNAME\u001b[39m","time":"2019-08-27T02:20:16.730Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mREADME.md\u001b[39m","time":"2019-08-27T02:20:16.731Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mdebug.log\u001b[39m","time":"2019-08-27T02:20:16.732Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mrobots.txt\u001b[39m","time":"2019-08-27T02:20:16.732Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/avatar.png\u001b[39m","time":"2019-08-27T02:20:16.799Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/blueprint.png\u001b[39m","time":"2019-08-27T02:20:16.800Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/carbon.png\u001b[39m","time":"2019-08-27T02:20:16.800Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/error-pin.png\u001b[39m","time":"2019-08-27T02:20:16.800Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/error-hanger.png\u001b[39m","time":"2019-08-27T02:20:16.800Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/bg4.png\u001b[39m","time":"2019-08-27T02:20:16.849Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - DP - 8-queens.png\u001b[39m","time":"2019-08-27T02:20:17.010Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - hash 2.gif\u001b[39m","time":"2019-08-27T02:20:17.011Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - hash 3.gif\u001b[39m","time":"2019-08-27T02:20:17.012Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - hash.gif\u001b[39m","time":"2019-08-27T02:20:17.013Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - bubble sort - TheAlgorithms.png\u001b[39m","time":"2019-08-27T02:20:17.013Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - bucket sort - TheAlgorithms.png\u001b[39m","time":"2019-08-27T02:20:17.015Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - selection sort - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:17.015Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - traversal - binary tree - breadth first - wiki.svg\u001b[39m","time":"2019-08-27T02:20:17.016Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - selection sort - TheAlgorithms.png\u001b[39m","time":"2019-08-27T02:20:17.016Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - traversal - binary tree - inorder - wiki.svg\u001b[39m","time":"2019-08-27T02:20:17.017Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - traversal - binary tree - postorder - wiki.svg\u001b[39m","time":"2019-08-27T02:20:17.017Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - traversal - binary tree - preorder - wiki.svg\u001b[39m","time":"2019-08-27T02:20:17.018Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Cloud - docker - image layer.jpg\u001b[39m","time":"2019-08-27T02:20:17.018Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Economy - 中国与世界主要国家和地区的贸易平衡 - 人民日报.jpg\u001b[39m","time":"2019-08-27T02:20:17.019Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Economy - 中美贸易战 - 涉及领域 - 人民日报.jpg\u001b[39m","time":"2019-08-27T02:20:17.020Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/HTTP - Wireshark - baidu.com.pcap\u001b[39m","time":"2019-08-27T02:20:17.021Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/HTTP - Wireshark - www.a.shifen.com.pcap\u001b[39m","time":"2019-08-27T02:20:17.022Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/HTTP - Wireshark - www.a.shifen.com.png\u001b[39m","time":"2019-08-27T02:20:17.022Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/IC - GPU - architecture - Fermi VS Kepler - SMX.jpg\u001b[39m","time":"2019-08-27T02:20:17.022Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/IC - GPU - architecture - Kepler - dynamic parallelism.jpg\u001b[39m","time":"2019-08-27T02:20:17.023Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/IC - GPU VS CPU.png\u001b[39m","time":"2019-08-27T02:20:17.024Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/JS - thanks-for-inventing-javascript.jpg\u001b[39m","time":"2019-08-27T02:20:17.024Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Java - diagram - java.util.Map - skywang.jpg\u001b[39m","time":"2019-08-27T02:20:17.024Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Java - diagram - java.util.Map - xusong.uml\u001b[39m","time":"2019-08-27T02:20:17.025Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Linux - FS - 文件系统的逻辑关系 - 深入分析Linux内核源代码.png\u001b[39m","time":"2019-08-27T02:20:17.025Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - NLP - LM - bigram counts.jpg\u001b[39m","time":"2019-08-27T02:20:17.025Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - NLP - LM - unigram counts.jpg\u001b[39m","time":"2019-08-27T02:20:17.026Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - NLP - MT - back-translation.png\u001b[39m","time":"2019-08-27T02:20:17.026Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - Opitmization - learning rate.jpg\u001b[39m","time":"2019-08-27T02:20:17.026Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - Opitmization - newton iteration.gif\u001b[39m","time":"2019-08-27T02:20:17.026Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - Opitmization - subderivative.png\u001b[39m","time":"2019-08-27T02:20:17.027Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - trick - lr in tennsor2tensor.png\u001b[39m","time":"2019-08-27T02:20:17.027Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - trick - lr - cyclical lr imagenet.jpg\u001b[39m","time":"2019-08-27T02:20:17.027Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - trick - regularization - L0 L1 L2 - .jpg\u001b[39m","time":"2019-08-27T02:20:17.028Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - 推荐系统 - 架构 - 推荐系统实践.jpg\u001b[39m","time":"2019-08-27T02:20:17.028Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Math - statistics - 贝叶斯推断 - 概率导论.png\u001b[39m","time":"2019-08-27T02:20:17.028Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Attention - Encoder-Decoder Attention.png\u001b[39m","time":"2019-08-27T02:20:17.029Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Attention - Encoder Self-Attention.png\u001b[39m","time":"2019-08-27T02:20:17.029Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Attention - MaskedDecoder Self-Attention.png\u001b[39m","time":"2019-08-27T02:20:17.029Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - BERT - embedding.png\u001b[39m","time":"2019-08-27T02:20:17.029Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - 2D卷积 - 动态图.gif\u001b[39m","time":"2019-08-27T02:20:17.030Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - Context.png\u001b[39m","time":"2019-08-27T02:20:17.030Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - Depthwise Separable Convolutions - Diagonalwise Refactorization.png\u001b[39m","time":"2019-08-27T02:20:17.030Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - Detection - RCNN - Regionlets.jpg\u001b[39m","time":"2019-08-27T02:20:17.030Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - Factorization rank1 - Inception.png\u001b[39m","time":"2019-08-27T02:20:17.031Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - Flatterned Convolution.png\u001b[39m","time":"2019-08-27T02:20:17.031Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - WHC - cs231n.jpeg\u001b[39m","time":"2019-08-27T02:20:17.032Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - math illustrated - jiayangqing.jpg\u001b[39m","time":"2019-08-27T02:20:17.032Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - GNMT - architecture.jpg\u001b[39m","time":"2019-08-27T02:20:17.032Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - NLI - Yang Liu 2016.jpg\u001b[39m","time":"2019-08-27T02:20:17.032Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - GRU - simple diagram.png\u001b[39m","time":"2019-08-27T02:20:17.033Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - LSTM - cell forget - colah.png\u001b[39m","time":"2019-08-27T02:20:17.033Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - LSTM - preservation of gradient - alex.png\u001b[39m","time":"2019-08-27T02:20:17.033Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - LSTM - simple diagram.png\u001b[39m","time":"2019-08-27T02:20:17.034Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - LSTM VS SRU.png\u001b[39m","time":"2019-08-27T02:20:17.034Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - LSTM gate - colah.png\u001b[39m","time":"2019-08-27T02:20:17.034Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - SRU - performance.png\u001b[39m","time":"2019-08-27T02:20:17.035Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - colah.png\u001b[39m","time":"2019-08-27T02:20:17.035Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - vanish gradient problem - alex.png\u001b[39m","time":"2019-08-27T02:20:17.035Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - bottleneck - origin.png\u001b[39m","time":"2019-08-27T02:20:17.036Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - bottleneck - wide resnet.png\u001b[39m","time":"2019-08-27T02:20:17.036Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - bottleneck - xusong.png\u001b[39m","time":"2019-08-27T02:20:17.037Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - plain net.png\u001b[39m","time":"2019-08-27T02:20:17.037Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - residual connection.png\u001b[39m","time":"2019-08-27T02:20:17.037Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Self Attention - Context.png\u001b[39m","time":"2019-08-27T02:20:17.038Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - TDNN - unit.png\u001b[39m","time":"2019-08-27T02:20:17.038Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - VAE - model.png\u001b[39m","time":"2019-08-27T02:20:17.038Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - attention - hierarchical attention.jpg\u001b[39m","time":"2019-08-27T02:20:17.038Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - encoder decoder - nmt.jpg\u001b[39m","time":"2019-08-27T02:20:17.039Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - object recognition - models.png\u001b[39m","time":"2019-08-27T02:20:17.039Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - seq2seq - attention based rnn.jpg\u001b[39m","time":"2019-08-27T02:20:17.039Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - seq2seq - rnn.jpg\u001b[39m","time":"2019-08-27T02:20:17.039Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - tensorflow - architecture.png\u001b[39m","time":"2019-08-27T02:20:17.040Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - FFN.png\u001b[39m","time":"2019-08-27T02:20:17.040Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - attention visualization 2.png\u001b[39m","time":"2019-08-27T02:20:17.040Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - multi head attention.png\u001b[39m","time":"2019-08-27T02:20:17.041Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - scaled dot product attention.png\u001b[39m","time":"2019-08-27T02:20:17.041Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - word embedding - ELMo - from BERT.png\u001b[39m","time":"2019-08-27T02:20:17.041Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 国家移民管理局 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.041Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 新闻出版广电总局 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.041Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 退役军人事务部 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.042Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 国家监察委员会 - 改革前 - 中纪委监委.jpg\u001b[39m","time":"2019-08-27T02:20:17.042Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Python - re - regular expression.png\u001b[39m","time":"2019-08-27T02:20:17.042Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/README.md\u001b[39m","time":"2019-08-27T02:20:17.042Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Speech - HMM - triphone - 2007.png\u001b[39m","time":"2019-08-27T02:20:17.043Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Speech - HMM - triphone - zhihu.jpg\u001b[39m","time":"2019-08-27T02:20:17.043Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - 4LayerModel - novell.com.gif\u001b[39m","time":"2019-08-27T02:20:17.043Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - architecture - Microsoft.gif\u001b[39m","time":"2019-08-27T02:20:17.043Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - overview - unix network programing.gif\u001b[39m","time":"2019-08-27T02:20:17.044Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - 原始套接字 VS 套接字.jpg\u001b[39m","time":"2019-08-27T02:20:17.044Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - 数据报格式 - TCP数据报格式及首部中的各字段 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:17.044Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Web - frontend - Angular - quickstart.png\u001b[39m","time":"2019-08-27T02:20:17.044Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - 数据报格式 - UDP数据报格式及首部中的各字段 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:17.045Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/密码学 - 赫尔曼密钥交换 - 1 - 可汗学院.png\u001b[39m","time":"2019-08-27T02:20:17.045Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/密码学 - 赫尔曼密钥交换 - 2 - 可汗学院.png\u001b[39m","time":"2019-08-27T02:20:17.046Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/建站 - Coding Pages - 域名配置.png\u001b[39m","time":"2019-08-27T02:20:17.046Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/建站 - DNS双线部署 - 服务器测速.png\u001b[39m","time":"2019-08-27T02:20:17.047Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/建站 - DNS解析 - 配置.png\u001b[39m","time":"2019-08-27T02:20:17.047Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/建站 - HTTPS - CodingPages.png\u001b[39m","time":"2019-08-27T02:20:17.047Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mabout/index.md\u001b[39m","time":"2019-08-27T02:20:17.128Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35m_posts/add.md\u001b[39m","time":"2019-08-27T02:20:17.128Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mtags/index.md\u001b[39m","time":"2019-08-27T02:20:17.128Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mcategories/index.md\u001b[39m","time":"2019-08-27T02:20:17.129Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - cocktail shaker - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:17.129Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - insertion sort - num.gif\u001b[39m","time":"2019-08-27T02:20:17.129Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - insertion sort.gif\u001b[39m","time":"2019-08-27T02:20:17.129Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - merge sort - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:17.130Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - quick sort - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:17.130Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Audio - 语谱图 - 宽带.jpeg\u001b[39m","time":"2019-08-27T02:20:17.130Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Audio - 语谱图 - 窄带.jpeg\u001b[39m","time":"2019-08-27T02:20:17.131Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Git - summary.svg\u001b[39m","time":"2019-08-27T02:20:17.131Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Hadoop - Hive - system_architecture.png\u001b[39m","time":"2019-08-27T02:20:17.131Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/LInux - shell.png\u001b[39m","time":"2019-08-27T02:20:17.132Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - NLP - LM - bigram prob.jpg\u001b[39m","time":"2019-08-27T02:20:17.132Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - NLP - MT - wmt17 best score.png\u001b[39m","time":"2019-08-27T02:20:17.132Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - NLP - MT - wmt18 best score.png\u001b[39m","time":"2019-08-27T02:20:17.132Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - trick - regularization - L1 L2 Elastic - scikit learn.png\u001b[39m","time":"2019-08-27T02:20:17.132Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - 推荐系统 - 架构 - wide and deep.png\u001b[39m","time":"2019-08-27T02:20:17.132Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - BERT - pretrain.png\u001b[39m","time":"2019-08-27T02:20:17.133Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - AlexNet - architecture.png\u001b[39m","time":"2019-08-27T02:20:17.133Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - SENet - pipeline.jpg\u001b[39m","time":"2019-08-27T02:20:17.133Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - GRU with Equation - colah.png\u001b[39m","time":"2019-08-27T02:20:17.133Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - LSTM - tensorflow - colah.png\u001b[39m","time":"2019-08-27T02:20:17.134Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - LSTM - tensorflow with Equation - colah.png\u001b[39m","time":"2019-08-27T02:20:17.134Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - LSTM - tensorflow with Equation 2 - colah.png\u001b[39m","time":"2019-08-27T02:20:17.134Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - SRU.jpg\u001b[39m","time":"2019-08-27T02:20:17.134Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - TDNN - architecture.png\u001b[39m","time":"2019-08-27T02:20:17.135Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - attention - hierarchical attention - result.jpg\u001b[39m","time":"2019-08-27T02:20:17.135Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - object detection - models.jpg\u001b[39m","time":"2019-08-27T02:20:17.135Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - spiking - integrate and fire.jpg\u001b[39m","time":"2019-08-27T02:20:17.135Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - attention visualization 1.png\u001b[39m","time":"2019-08-27T02:20:17.135Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - attention visualization 3.png\u001b[39m","time":"2019-08-27T02:20:17.135Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - encoder.png\u001b[39m","time":"2019-08-27T02:20:17.136Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - tips - batch_size 1.png\u001b[39m","time":"2019-08-27T02:20:17.136Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - tips - learning rate.png\u001b[39m","time":"2019-08-27T02:20:17.136Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - tips - batch_size 2.png\u001b[39m","time":"2019-08-27T02:20:17.136Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - trick - batch norm - algorithm.png\u001b[39m","time":"2019-08-27T02:20:17.137Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - visualizatioin - cnn - Zeiler.jpg\u001b[39m","time":"2019-08-27T02:20:17.137Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 司法部 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.137Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 国家广播电视总局 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.137Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 国税地税征管体制 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.138Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 审计署 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.138Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 科技部 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.138Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 国家监察委员会 - 改革后1 - 中纪委监委.jpg\u001b[39m","time":"2019-08-27T02:20:17.138Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Programming - OO - 面向对象基本特征 - 大话设计模式.png\u001b[39m","time":"2019-08-27T02:20:17.138Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Speech - HMM - generation - HTK.png\u001b[39m","time":"2019-08-27T02:20:17.139Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Speech - HMM - tie similar state - 2007.png\u001b[39m","time":"2019-08-27T02:20:17.139Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - IP层工作流程 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:17.139Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - TCP的状态变迁图 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:17.139Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - 分用过程 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:17.140Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - 封装过程 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:17.140Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - 数据报格式 - IP数据报格式及首部中的各字段 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:17.140Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/TCP IP - 路由器连接两个网络 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:17.140Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/密码学 - mod运算 - 可汗公开课.png\u001b[39m","time":"2019-08-27T02:20:17.141Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/密码学 - 赫尔曼密钥交换 - 3 - 可汗学院.png\u001b[39m","time":"2019-08-27T02:20:17.141Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/assets/happy-birthday.png\u001b[39m","time":"2019-08-27T02:20:17.152Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Java - diagram - java.util.Collection - skywang.jpg\u001b[39m","time":"2019-08-27T02:20:17.224Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Math - statistics - summary - 李航.jpg\u001b[39m","time":"2019-08-27T02:20:17.224Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - GNMT - LSTM with residual.png\u001b[39m","time":"2019-08-27T02:20:17.225Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - RNN - overview.png\u001b[39m","time":"2019-08-27T02:20:17.225Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - degradation.png\u001b[39m","time":"2019-08-27T02:20:17.225Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - degradation2.png\u001b[39m","time":"2019-08-27T02:20:17.225Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Self Attention - spacetime - non local NN.png\u001b[39m","time":"2019-08-27T02:20:17.225Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - self attention - visualization.png\u001b[39m","time":"2019-08-27T02:20:17.226Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 中央党校 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.226Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 国家监察委员会 - 监察对象 - 中纪委监委.jpg\u001b[39m","time":"2019-08-27T02:20:17.226Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Java - diagram - java.util.Map - xusong.svg\u001b[39m","time":"2019-08-27T02:20:17.274Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - NLP - MT - wmt18 best system.png\u001b[39m","time":"2019-08-27T02:20:17.274Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - SENet - Inception-module.jpg\u001b[39m","time":"2019-08-27T02:20:17.275Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - 空洞卷积 - 动态图.gif\u001b[39m","time":"2019-08-27T02:20:17.275Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - convseq2seq - architecture.png\u001b[39m","time":"2019-08-27T02:20:17.275Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 国家监察委员会 - 改革后2 - 中纪委监委.jpg\u001b[39m","time":"2019-08-27T02:20:17.275Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/密码学 - 赫尔曼密钥交换 - 4 - 可汗学院.png\u001b[39m","time":"2019-08-27T02:20:17.276Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/css/main.styl\u001b[39m","time":"2019-08-27T02:20:17.280Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/apple-touch-icon-next.png\u001b[39m","time":"2019-08-27T02:20:17.280Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/algolia_logo.svg\u001b[39m","time":"2019-08-27T02:20:17.281Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/avatar.gif\u001b[39m","time":"2019-08-27T02:20:17.281Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc-nd.svg\u001b[39m","time":"2019-08-27T02:20:17.281Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc-sa.svg\u001b[39m","time":"2019-08-27T02:20:17.281Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc.svg\u001b[39m","time":"2019-08-27T02:20:17.282Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nd.svg\u001b[39m","time":"2019-08-27T02:20:17.283Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-sa.svg\u001b[39m","time":"2019-08-27T02:20:17.283Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by.svg\u001b[39m","time":"2019-08-27T02:20:17.283Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/cc-zero.svg\u001b[39m","time":"2019-08-27T02:20:17.283Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/favicon-16x16-next.png\u001b[39m","time":"2019-08-27T02:20:17.283Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/favicon-16x16-song.png\u001b[39m","time":"2019-08-27T02:20:17.284Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/favicon-32x32-song.png\u001b[39m","time":"2019-08-27T02:20:17.284Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/loading.gif\u001b[39m","time":"2019-08-27T02:20:17.284Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/favicon-32x32-next.png\u001b[39m","time":"2019-08-27T02:20:17.284Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/logo-song.svg\u001b[39m","time":"2019-08-27T02:20:17.285Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/placeholder.gif\u001b[39m","time":"2019-08-27T02:20:17.285Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/logo.svg\u001b[39m","time":"2019-08-27T02:20:17.285Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/quote-l.svg\u001b[39m","time":"2019-08-27T02:20:17.285Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/quote-r.svg\u001b[39m","time":"2019-08-27T02:20:17.286Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/images/searchicon.png\u001b[39m","time":"2019-08-27T02:20:17.286Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - heap sort - wiki.gif\u001b[39m","time":"2019-08-27T02:20:17.356Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Cloud - docker - image layer - tensorflow.png\u001b[39m","time":"2019-08-27T02:20:17.357Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - NLP - MT - wmt17 best system.png\u001b[39m","time":"2019-08-27T02:20:17.357Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - Opitmization - compare 1.gif\u001b[39m","time":"2019-08-27T02:20:17.357Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Detection - Depth Evolution.png\u001b[39m","time":"2019-08-27T02:20:17.357Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - Depth Evolution.png\u001b[39m","time":"2019-08-27T02:20:17.358Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - Resnet - architecture.png\u001b[39m","time":"2019-08-27T02:20:17.358Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - model.jpg\u001b[39m","time":"2019-08-27T02:20:17.358Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - visualization - densenet121.png\u001b[39m","time":"2019-08-27T02:20:17.358Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_layout.swig\u001b[39m","time":"2019-08-27T02:20:17.565Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/archive.swig\u001b[39m","time":"2019-08-27T02:20:17.565Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/category.swig\u001b[39m","time":"2019-08-27T02:20:17.565Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/page.swig\u001b[39m","time":"2019-08-27T02:20:17.565Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/post.swig\u001b[39m","time":"2019-08-27T02:20:17.565Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/index.swig\u001b[39m","time":"2019-08-27T02:20:17.565Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/schedule.swig\u001b[39m","time":"2019-08-27T02:20:17.565Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/tag.swig\u001b[39m","time":"2019-08-27T02:20:17.565Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/de.yml\u001b[39m","time":"2019-08-27T02:20:17.590Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/default.yml\u001b[39m","time":"2019-08-27T02:20:17.590Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/en.yml\u001b[39m","time":"2019-08-27T02:20:17.590Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/fr.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/id.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/it.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/ja.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/ko.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/nl.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/pt-BR.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/pt.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/ru.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/vi.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-CN.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/tr.yml\u001b[39m","time":"2019-08-27T02:20:17.591Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-HK.yml\u001b[39m","time":"2019-08-27T02:20:17.592Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-TW.yml\u001b[39m","time":"2019-08-27T02:20:17.592Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Algorithm - sorting - shell sort - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:17.592Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - research debt mountain - distill pub.jpg\u001b[39m","time":"2019-08-27T02:20:17.592Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - Depthwise Separable Convolutions - SliceNet.jpg\u001b[39m","time":"2019-08-27T02:20:17.593Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/algolia-search.js\u001b[39m","time":"2019-08-27T02:20:17.598Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/bootstrap.js\u001b[39m","time":"2019-08-27T02:20:17.598Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/affix.js\u001b[39m","time":"2019-08-27T02:20:17.598Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/exturl.js\u001b[39m","time":"2019-08-27T02:20:17.599Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/js.cookie.js\u001b[39m","time":"2019-08-27T02:20:17.599Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/post-details.js\u001b[39m","time":"2019-08-27T02:20:17.599Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/motion.js\u001b[39m","time":"2019-08-27T02:20:17.600Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/scroll-cookie.js\u001b[39m","time":"2019-08-27T02:20:17.600Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/scrollspy.js\u001b[39m","time":"2019-08-27T02:20:17.600Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.ui.min.js\u001b[39m","time":"2019-08-27T02:20:17.601Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.min.js\u001b[39m","time":"2019-08-27T02:20:17.601Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/utils.js\u001b[39m","time":"2019-08-27T02:20:17.601Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.ui.js\u001b[39m","time":"2019-08-27T02:20:17.601Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Math - Fractal - Sierpinski_Triangle.gif\u001b[39m","time":"2019-08-27T02:20:17.651Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - object recognition - task.png\u001b[39m","time":"2019-08-27T02:20:17.652Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - tensorflow - dataflow graph.gif\u001b[39m","time":"2019-08-27T02:20:17.652Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery/index.js\u001b[39m","time":"2019-08-27T02:20:17.652Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_custom/header.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_custom/head.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post-collapse.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post-copyright.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post-related.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_custom/sidebar.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/wechat-subscriber.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/reward.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/comments.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/pagination.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/footer.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/boostrap.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/page-header.swig\u001b[39m","time":"2019-08-27T02:20:17.708Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/commons.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/vendors.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/noscript.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/bookmark.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/exturl.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/copy-code.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/breadcrumb.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/needsharebutton.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/pangu.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/rating.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/scroll-cookie.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/github-banner.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/schedule.swig\u001b[39m","time":"2019-08-27T02:20:17.709Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Theme config loaded.","time":"2019-08-27T02:20:17.710Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35m_config.yml\u001b[39m","time":"2019-08-27T02:20:17.710Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - Opitmization - compare 2.gif\u001b[39m","time":"2019-08-27T02:20:17.710Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - 1D卷积 - convrect - wolfram.gif\u001b[39m","time":"2019-08-27T02:20:17.710Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - SENet - ResNet-module.jpg\u001b[39m","time":"2019-08-27T02:20:17.710Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - visualization - VGG110.png\u001b[39m","time":"2019-08-27T02:20:17.710Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/js/src/schemes/pisces.js\u001b[39m","time":"2019-08-27T02:20:17.711Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/sidebar.swig\u001b[39m","time":"2019-08-27T02:20:17.745Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - 2D卷积 - 转置卷积 - 动态图.gif\u001b[39m","time":"2019-08-27T02:20:17.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.js\u001b[39m","time":"2019-08-27T02:20:17.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/muse.swig\u001b[39m","time":"2019-08-27T02:20:17.808Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/mist.swig\u001b[39m","time":"2019-08-27T02:20:17.808Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post.swig\u001b[39m","time":"2019-08-27T02:20:17.808Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/menu/menu-badge.swig\u001b[39m","time":"2019-08-27T02:20:17.808Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/menu/menu-item.swig\u001b[39m","time":"2019-08-27T02:20:17.808Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head/head-unique.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/header/index.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/header/menu.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/header/sub-menu.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/index.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/localsearch.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/swiftype.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head/external-fonts.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/header/brand.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head/head.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/gemini.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/add-this.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/tinysou.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/baidushare.swig\u001b[39m","time":"2019-08-27T02:20:17.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/analytics-with-widget.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/application-insights.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/busuanzi-counter.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/cnzz-analytics.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/facebook-sdk.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/duoshuo_share.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/firestore.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/google-analytics.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/index.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/tencent-analytics.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/tencent-mta.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/vkontakte-api.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/lean-analytics.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/disqus.swig\u001b[39m","time":"2019-08-27T02:20:17.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/changyan.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/index.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/livere.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/valine.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/math/index.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/pages/post-details.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/pisces.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/index.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/baidu-analytics.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/tinysou.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/seo/baidu-push.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/math/katex.swig\u001b[39m","time":"2019-08-27T02:20:17.811Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/math/mathjax.swig\u001b[39m","time":"2019-08-27T02:20:17.812Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/ML - PCA - demo.gif\u001b[39m","time":"2019-08-27T02:20:17.812Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - 1D卷积 - convgaus - wolfram.gif\u001b[39m","time":"2019-08-27T02:20:17.812Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/localsearch.swig\u001b[39m","time":"2019-08-27T02:20:17.835Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/gitment.swig\u001b[39m","time":"2019-08-27T02:20:17.835Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - visualization - resnet56.png\u001b[39m","time":"2019-08-27T02:20:17.836Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 国家监察委员会 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:17.836Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/algolia-search/assets.swig\u001b[39m","time":"2019-08-27T02:20:17.843Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/algolia-search/dom.swig\u001b[39m","time":"2019-08-27T02:20:17.843Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Audio - TTS - wavenet - cnn.gif\u001b[39m","time":"2019-08-27T02:20:17.843Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - 动态图.gif\u001b[39m","time":"2019-08-27T02:20:17.844Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - CNN - Detection - RCNN.png\u001b[39m","time":"2019-08-27T02:20:17.856Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - demo.gif\u001b[39m","time":"2019-08-27T02:20:17.859Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - ChineseOfficials2013 - cnpolitics.jpg\u001b[39m","time":"2019-08-27T02:20:17.861Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/index.html\u001b[39m","time":"2019-08-27T02:20:17.867Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mjs/gitment.browser.js\u001b[39m","time":"2019-08-27T02:20:17.871Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - GNMT - flow.gif\u001b[39m","time":"2019-08-27T02:20:17.872Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - dataflow.gif\u001b[39m","time":"2019-08-27T02:20:17.874Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/足球 - 世界杯 - 2018 - C罗 - VS西班牙 - 帽子戏法2.gif\u001b[39m","time":"2019-08-27T02:20:17.874Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/足球 - 世界杯 - 2018 - 梅西 - VS冰岛 - 囧1.gif\u001b[39m","time":"2019-08-27T02:20:17.876Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mjs/gitmint.browser.js\u001b[39m","time":"2019-08-27T02:20:17.882Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/足球 - 世界杯 - 2018 - C罗 - VS西班牙 - 帽子戏法3.gif\u001b[39m","time":"2019-08-27T02:20:17.884Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Audio - 音频 - 时域 - parallel wavenet.gif\u001b[39m","time":"2019-08-27T02:20:17.884Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - visualization - VGG56.png\u001b[39m","time":"2019-08-27T02:20:17.884Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/足球 - 世界杯 - 2018 - C罗 - VS西班牙 - 帽子戏法1.gif\u001b[39m","time":"2019-08-27T02:20:17.885Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/job_compare.png\u001b[39m","time":"2019-08-27T02:20:17.891Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Politics - 中国领导团队新阵容2018 - 人民日报.jpg\u001b[39m","time":"2019-08-27T02:20:17.898Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - convseq2seq - flow.gif\u001b[39m","time":"2019-08-27T02:20:17.900Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - TDNN - unit.tiff\u001b[39m","time":"2019-08-27T02:20:17.908Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Audio - 音频 - 时域 - wavenet.gif\u001b[39m","time":"2019-08-27T02:20:17.910Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/NN - transformer - universal transformer - flow.gif\u001b[39m","time":"2019-08-27T02:20:17.917Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Processed: \u001b[35mimages/raw/Math - Fractal - Mandelbrot sequence.gif\u001b[39m","time":"2019-08-27T02:20:18.005Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generate link 0 for post []","time":"2019-08-27T02:20:18.176Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Generator: \u001b[35mpage\u001b[39m","time":"2019-08-27T02:20:18.500Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Generator: \u001b[35mpost\u001b[39m","time":"2019-08-27T02:20:18.500Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Generator: \u001b[35marchive\u001b[39m","time":"2019-08-27T02:20:18.500Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Generator: \u001b[35mindex\u001b[39m","time":"2019-08-27T02:20:18.500Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Generator: \u001b[35mxml\u001b[39m","time":"2019-08-27T02:20:18.500Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Generator: \u001b[35mtag\u001b[39m","time":"2019-08-27T02:20:18.500Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Generator: \u001b[35mcategory\u001b[39m","time":"2019-08-27T02:20:18.500Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Generator: \u001b[35masset\u001b[39m","time":"2019-08-27T02:20:18.502Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Files loaded in \u001b[36m1.82 s\u001b[39m","time":"2019-08-27T02:20:18.520Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering page: \u001b[35mabout/index.html\u001b[39m","time":"2019-08-27T02:20:18.571Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering page: \u001b[35mtags/index.html\u001b[39m","time":"2019-08-27T02:20:18.656Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering page: \u001b[35mcategories/index.html\u001b[39m","time":"2019-08-27T02:20:18.700Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering page: \u001b[35mimages/raw/index.html\u001b[39m","time":"2019-08-27T02:20:18.743Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering post: \u001b[35mpub/0/index.html\u001b[39m","time":"2019-08-27T02:20:18.853Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering archive: \u001b[35marchives/index.html\u001b[39m","time":"2019-08-27T02:20:18.925Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering archive: \u001b[35marchives/2019/index.html\u001b[39m","time":"2019-08-27T02:20:18.969Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering archive: \u001b[35marchives/2019/08/index.html\u001b[39m","time":"2019-08-27T02:20:19.003Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Rendering index: \u001b[35mindex.html\u001b[39m","time":"2019-08-27T02:20:19.036Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35msearch.xml\u001b[39m","time":"2019-08-27T02:20:19.655Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mindex.html\u001b[39m","time":"2019-08-27T02:20:19.666Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/gitment.browser.js\u001b[39m","time":"2019-08-27T02:20:19.677Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mREADME.md\u001b[39m","time":"2019-08-27T02:20:19.677Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mCNAME\u001b[39m","time":"2019-08-27T02:20:19.677Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35m404.html\u001b[39m","time":"2019-08-27T02:20:19.677Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mrobots.txt\u001b[39m","time":"2019-08-27T02:20:19.679Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/gitmint.browser.js\u001b[39m","time":"2019-08-27T02:20:19.679Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mabout/index.html\u001b[39m","time":"2019-08-27T02:20:19.695Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mtags/index.html\u001b[39m","time":"2019-08-27T02:20:19.696Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35marchives/index.html\u001b[39m","time":"2019-08-27T02:20:19.697Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mcategories/index.html\u001b[39m","time":"2019-08-27T02:20:19.697Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mdebug.log\u001b[39m","time":"2019-08-27T02:20:19.697Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/error-pin.png\u001b[39m","time":"2019-08-27T02:20:19.720Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mcss/main.css\u001b[39m","time":"2019-08-27T02:20:19.720Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/carbon.png\u001b[39m","time":"2019-08-27T02:20:19.721Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/apple-touch-icon-next.png\u001b[39m","time":"2019-08-27T02:20:19.721Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/avatar.gif\u001b[39m","time":"2019-08-27T02:20:19.721Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/cc-by-nc-sa.svg\u001b[39m","time":"2019-08-27T02:20:19.721Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/cc-by-nc.svg\u001b[39m","time":"2019-08-27T02:20:19.721Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/cc-by-nd.svg\u001b[39m","time":"2019-08-27T02:20:19.721Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/cc-by-sa.svg\u001b[39m","time":"2019-08-27T02:20:19.722Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/algolia_logo.svg\u001b[39m","time":"2019-08-27T02:20:19.722Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/cc-by-nc-nd.svg\u001b[39m","time":"2019-08-27T02:20:19.722Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/favicon-16x16-next.png\u001b[39m","time":"2019-08-27T02:20:19.722Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/cc-by.svg\u001b[39m","time":"2019-08-27T02:20:19.722Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/favicon-32x32-song.png\u001b[39m","time":"2019-08-27T02:20:19.722Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/loading.gif\u001b[39m","time":"2019-08-27T02:20:19.722Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/logo-song.svg\u001b[39m","time":"2019-08-27T02:20:19.722Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/placeholder.gif\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/cc-zero.svg\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/logo.svg\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/blueprint.png\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/favicon-32x32-next.png\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/quote-l.svg\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/avatar.png\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/searchicon.png\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/error-hanger.png\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/favicon-16x16-song.png\u001b[39m","time":"2019-08-27T02:20:19.723Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/quote-r.svg\u001b[39m","time":"2019-08-27T02:20:19.724Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mpub/0/index.html\u001b[39m","time":"2019-08-27T02:20:19.740Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/index.html\u001b[39m","time":"2019-08-27T02:20:19.740Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35marchives/2019/08/index.html\u001b[39m","time":"2019-08-27T02:20:19.741Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/assets/happy-birthday.png\u001b[39m","time":"2019-08-27T02:20:19.741Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - degradation2.png\u001b[39m","time":"2019-08-27T02:20:19.741Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 中央党校 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.741Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Java - diagram - java.util.Map - xusong.svg\u001b[39m","time":"2019-08-27T02:20:19.741Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - 空洞卷积 - 动态图.gif\u001b[39m","time":"2019-08-27T02:20:19.741Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - SENet - Inception-module.jpg\u001b[39m","time":"2019-08-27T02:20:19.741Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Detection - Depth Evolution.png\u001b[39m","time":"2019-08-27T02:20:19.741Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - model.jpg\u001b[39m","time":"2019-08-27T02:20:19.742Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/bg4.png\u001b[39m","time":"2019-08-27T02:20:19.744Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - quick sort - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:19.745Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Audio - 语谱图 - 宽带.jpeg\u001b[39m","time":"2019-08-27T02:20:19.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Audio - 语谱图 - 窄带.jpeg\u001b[39m","time":"2019-08-27T02:20:19.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Git - summary.svg\u001b[39m","time":"2019-08-27T02:20:19.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Hadoop - Hive - system_architecture.png\u001b[39m","time":"2019-08-27T02:20:19.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/LInux - shell.png\u001b[39m","time":"2019-08-27T02:20:19.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - NLP - LM - bigram prob.jpg\u001b[39m","time":"2019-08-27T02:20:19.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - NLP - MT - wmt17 best score.png\u001b[39m","time":"2019-08-27T02:20:19.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - NLP - MT - wmt18 best score.png\u001b[39m","time":"2019-08-27T02:20:19.746Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - 推荐系统 - 架构 - wide and deep.png\u001b[39m","time":"2019-08-27T02:20:19.747Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - merge sort - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:19.747Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - trick - regularization - L1 L2 Elastic - scikit learn.png\u001b[39m","time":"2019-08-27T02:20:19.747Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - AlexNet - architecture.png\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - BERT - pretrain.png\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - SENet - pipeline.jpg\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - LSTM - tensorflow with Equation - colah.png\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - LSTM - tensorflow - colah.png\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - SRU.jpg\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - TDNN - architecture.png\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - attention - hierarchical attention - result.jpg\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - object detection - models.jpg\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - spiking - integrate and fire.jpg\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - attention visualization 3.png\u001b[39m","time":"2019-08-27T02:20:19.748Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - insertion sort - num.gif\u001b[39m","time":"2019-08-27T02:20:19.749Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - encoder.png\u001b[39m","time":"2019-08-27T02:20:19.749Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - trick - batch norm - algorithm.png\u001b[39m","time":"2019-08-27T02:20:19.749Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - visualizatioin - cnn - Zeiler.jpg\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - tips - batch_size 1.png\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 司法部 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 国税地税征管体制 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - cocktail shaker - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 审计署 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - tips - batch_size 2.png\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 科技部 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 国家广播电视总局 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Programming - OO - 面向对象基本特征 - 大话设计模式.png\u001b[39m","time":"2019-08-27T02:20:19.750Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Speech - HMM - tie similar state - 2007.png\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - IP层工作流程 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - TCP的状态变迁图 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - 分用过程 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - 封装过程 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - 数据报格式 - IP数据报格式及首部中的各字段 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - 路由器连接两个网络 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 国家监察委员会 - 改革后1 - 中纪委监委.jpg\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Speech - HMM - generation - HTK.png\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/密码学 - mod运算 - 可汗公开课.png\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - GRU with Equation - colah.png\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35marchives/2019/index.html\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - insertion sort.gif\u001b[39m","time":"2019-08-27T02:20:19.751Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/密码学 - 赫尔曼密钥交换 - 3 - 可汗学院.png\u001b[39m","time":"2019-08-27T02:20:19.752Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - LSTM - tensorflow with Equation 2 - colah.png\u001b[39m","time":"2019-08-27T02:20:19.752Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - tips - learning rate.png\u001b[39m","time":"2019-08-27T02:20:19.752Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - attention visualization 1.png\u001b[39m","time":"2019-08-27T02:20:19.753Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/algolia-search.js\u001b[39m","time":"2019-08-27T02:20:19.761Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/bootstrap.js\u001b[39m","time":"2019-08-27T02:20:19.761Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Cloud - docker - image layer - tensorflow.png\u001b[39m","time":"2019-08-27T02:20:19.761Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - heap sort - wiki.gif\u001b[39m","time":"2019-08-27T02:20:19.762Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/affix.js\u001b[39m","time":"2019-08-27T02:20:19.767Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/js.cookie.js\u001b[39m","time":"2019-08-27T02:20:19.767Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Java - diagram - java.util.Collection - skywang.jpg\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/scroll-cookie.js\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/post-details.js\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/exturl.js\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/scrollspy.js\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - GNMT - LSTM with residual.png\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Self Attention - spacetime - non local NN.png\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - overview.png\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - NLP - MT - wmt18 best system.png\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 国家监察委员会 - 监察对象 - 中纪委监委.jpg\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - convseq2seq - architecture.png\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Math - statistics - summary - 李航.jpg\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - self attention - visualization.png\u001b[39m","time":"2019-08-27T02:20:19.768Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - hash 3.gif\u001b[39m","time":"2019-08-27T02:20:19.769Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - hash 2.gif\u001b[39m","time":"2019-08-27T02:20:19.769Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - bucket sort - TheAlgorithms.png\u001b[39m","time":"2019-08-27T02:20:19.769Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - bubble sort - TheAlgorithms.png\u001b[39m","time":"2019-08-27T02:20:19.769Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - hash.gif\u001b[39m","time":"2019-08-27T02:20:19.769Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/密码学 - 赫尔曼密钥交换 - 4 - 可汗学院.png\u001b[39m","time":"2019-08-27T02:20:19.769Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - traversal - binary tree - postorder - wiki.svg\u001b[39m","time":"2019-08-27T02:20:19.770Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - selection sort - TheAlgorithms.png\u001b[39m","time":"2019-08-27T02:20:19.770Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - NLP - MT - wmt17 best system.png\u001b[39m","time":"2019-08-27T02:20:19.771Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - Depth Evolution.png\u001b[39m","time":"2019-08-27T02:20:19.771Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - selection sort - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:19.771Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - traversal - binary tree - inorder - wiki.svg\u001b[39m","time":"2019-08-27T02:20:19.771Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - traversal - binary tree - breadth first - wiki.svg\u001b[39m","time":"2019-08-27T02:20:19.771Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/HTTP - Wireshark - baidu.com.pcap\u001b[39m","time":"2019-08-27T02:20:19.771Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/HTTP - Wireshark - www.a.shifen.com.pcap\u001b[39m","time":"2019-08-27T02:20:19.771Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Economy - 中国与世界主要国家和地区的贸易平衡 - 人民日报.jpg\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Cloud - docker - image layer.jpg\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/HTTP - Wireshark - www.a.shifen.com.png\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/IC - GPU - architecture - Kepler - dynamic parallelism.jpg\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - traversal - binary tree - preorder - wiki.svg\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/JS - thanks-for-inventing-javascript.jpg\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/IC - GPU VS CPU.png\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Java - diagram - java.util.Map - xusong.uml\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Linux - FS - 文件系统的逻辑关系 - 深入分析Linux内核源代码.png\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - NLP - LM - bigram counts.jpg\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Java - diagram - java.util.Map - skywang.jpg\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - Opitmization - learning rate.jpg\u001b[39m","time":"2019-08-27T02:20:19.772Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Economy - 中美贸易战 - 涉及领域 - 人民日报.jpg\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - NLP - LM - unigram counts.jpg\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - Opitmization - subderivative.png\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - trick - lr - cyclical lr imagenet.jpg\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - Opitmization - newton iteration.gif\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - trick - regularization - L0 L1 L2 - .jpg\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - trick - lr in tennsor2tensor.png\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - 推荐系统 - 架构 - 推荐系统实践.jpg\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Attention - Encoder-Decoder Attention.png\u001b[39m","time":"2019-08-27T02:20:19.773Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/IC - GPU - architecture - Fermi VS Kepler - SMX.jpg\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - BERT - embedding.png\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - NLP - MT - back-translation.png\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Attention - Encoder Self-Attention.png\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Math - statistics - 贝叶斯推断 - 概率导论.png\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - Detection - RCNN - Regionlets.jpg\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - 2D卷积 - 动态图.gif\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - Context.png\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - Depthwise Separable Convolutions - Diagonalwise Refactorization.png\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Attention - MaskedDecoder Self-Attention.png\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - WHC - cs231n.jpeg\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - Flatterned Convolution.png\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - GNMT - architecture.jpg\u001b[39m","time":"2019-08-27T02:20:19.774Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - LSTM - preservation of gradient - alex.png\u001b[39m","time":"2019-08-27T02:20:19.775Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - NLI - Yang Liu 2016.jpg\u001b[39m","time":"2019-08-27T02:20:19.775Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - LSTM VS SRU.png\u001b[39m","time":"2019-08-27T02:20:19.775Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - LSTM - cell forget - colah.png\u001b[39m","time":"2019-08-27T02:20:19.775Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - GRU - simple diagram.png\u001b[39m","time":"2019-08-27T02:20:19.775Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - LSTM - simple diagram.png\u001b[39m","time":"2019-08-27T02:20:19.775Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - Factorization rank1 - Inception.png\u001b[39m","time":"2019-08-27T02:20:19.775Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - vanish gradient problem - alex.png\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - SRU - performance.png\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - LSTM gate - colah.png\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - math illustrated - jiayangqing.jpg\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - bottleneck - origin.png\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Self Attention - Context.png\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - residual connection.png\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - RNN - colah.png\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - bottleneck - xusong.png\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - encoder decoder - nmt.jpg\u001b[39m","time":"2019-08-27T02:20:19.776Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - attention - hierarchical attention.jpg\u001b[39m","time":"2019-08-27T02:20:19.777Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - TDNN - unit.png\u001b[39m","time":"2019-08-27T02:20:19.777Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - VAE - model.png\u001b[39m","time":"2019-08-27T02:20:19.778Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - seq2seq - rnn.jpg\u001b[39m","time":"2019-08-27T02:20:19.778Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - object recognition - models.png\u001b[39m","time":"2019-08-27T02:20:19.779Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - plain net.png\u001b[39m","time":"2019-08-27T02:20:19.779Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - seq2seq - attention based rnn.jpg\u001b[39m","time":"2019-08-27T02:20:19.779Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - tensorflow - architecture.png\u001b[39m","time":"2019-08-27T02:20:19.786Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - FFN.png\u001b[39m","time":"2019-08-27T02:20:19.788Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - bottleneck - wide resnet.png\u001b[39m","time":"2019-08-27T02:20:19.788Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - multi head attention.png\u001b[39m","time":"2019-08-27T02:20:19.789Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 新闻出版广电总局 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.790Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - attention visualization 2.png\u001b[39m","time":"2019-08-27T02:20:19.790Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 国家移民管理局 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.791Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - word embedding - ELMo - from BERT.png\u001b[39m","time":"2019-08-27T02:20:19.791Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 国家监察委员会 - 改革前 - 中纪委监委.jpg\u001b[39m","time":"2019-08-27T02:20:19.791Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 退役军人事务部 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.791Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/README.md\u001b[39m","time":"2019-08-27T02:20:19.791Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - 4LayerModel - novell.com.gif\u001b[39m","time":"2019-08-27T02:20:19.791Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - scaled dot product attention.png\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Speech - HMM - triphone - 2007.png\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Speech - HMM - triphone - zhihu.jpg\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Web - frontend - Angular - quickstart.png\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - overview - unix network programing.gif\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - architecture - Microsoft.gif\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - 原始套接字 VS 套接字.jpg\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/密码学 - 赫尔曼密钥交换 - 1 - 可汗学院.png\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - 数据报格式 - TCP数据报格式及首部中的各字段 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/密码学 - 赫尔曼密钥交换 - 2 - 可汗学院.png\u001b[39m","time":"2019-08-27T02:20:19.792Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/建站 - DNS双线部署 - 服务器测速.png\u001b[39m","time":"2019-08-27T02:20:19.793Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/建站 - Coding Pages - 域名配置.png\u001b[39m","time":"2019-08-27T02:20:19.793Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 国家监察委员会 - 改革后2 - 中纪委监委.jpg\u001b[39m","time":"2019-08-27T02:20:19.793Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Python - re - regular expression.png\u001b[39m","time":"2019-08-27T02:20:19.793Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - degradation.png\u001b[39m","time":"2019-08-27T02:20:19.793Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - DP - 8-queens.png\u001b[39m","time":"2019-08-27T02:20:19.795Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/建站 - DNS解析 - 配置.png\u001b[39m","time":"2019-08-27T02:20:19.795Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/TCP IP - 数据报格式 - UDP数据报格式及首部中的各字段 - TCPIP详解.PNG\u001b[39m","time":"2019-08-27T02:20:19.801Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/建站 - HTTPS - CodingPages.png\u001b[39m","time":"2019-08-27T02:20:19.805Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/motion.js\u001b[39m","time":"2019-08-27T02:20:19.806Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/utils.js\u001b[39m","time":"2019-08-27T02:20:19.807Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Algorithm - sorting - shell sort - TheAlgorithms.gif\u001b[39m","time":"2019-08-27T02:20:19.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - Opitmization - compare 1.gif\u001b[39m","time":"2019-08-27T02:20:19.809Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - Resnet - architecture.png\u001b[39m","time":"2019-08-27T02:20:19.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - Opitmization - compare 2.gif\u001b[39m","time":"2019-08-27T02:20:19.810Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mjs/src/schemes/pisces.js\u001b[39m","time":"2019-08-27T02:20:19.817Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - research debt mountain - distill pub.jpg\u001b[39m","time":"2019-08-27T02:20:19.818Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - object recognition - task.png\u001b[39m","time":"2019-08-27T02:20:19.818Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - SENet - ResNet-module.jpg\u001b[39m","time":"2019-08-27T02:20:19.819Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mlib/velocity/velocity.ui.min.js\u001b[39m","time":"2019-08-27T02:20:19.827Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - visualization - densenet121.png\u001b[39m","time":"2019-08-27T02:20:19.827Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mlib/velocity/velocity.min.js\u001b[39m","time":"2019-08-27T02:20:19.830Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - tensorflow - dataflow graph.gif\u001b[39m","time":"2019-08-27T02:20:19.830Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mlib/velocity/velocity.ui.js\u001b[39m","time":"2019-08-27T02:20:19.830Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - 1D卷积 - convrect - wolfram.gif\u001b[39m","time":"2019-08-27T02:20:19.830Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - Depthwise Separable Convolutions - SliceNet.jpg\u001b[39m","time":"2019-08-27T02:20:19.831Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - visualization - VGG110.png\u001b[39m","time":"2019-08-27T02:20:19.840Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - 2D卷积 - 转置卷积 - 动态图.gif\u001b[39m","time":"2019-08-27T02:20:19.841Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/ML - PCA - demo.gif\u001b[39m","time":"2019-08-27T02:20:19.841Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - 1D卷积 - convgaus - wolfram.gif\u001b[39m","time":"2019-08-27T02:20:19.842Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Math - Fractal - Sierpinski_Triangle.gif\u001b[39m","time":"2019-08-27T02:20:19.846Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - 动态图.gif\u001b[39m","time":"2019-08-27T02:20:19.846Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Audio - TTS - wavenet - cnn.gif\u001b[39m","time":"2019-08-27T02:20:19.849Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 党和国家机构改革 - 国家监察委员会 - 人民日报.gif\u001b[39m","time":"2019-08-27T02:20:19.852Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - visualization - resnet56.png\u001b[39m","time":"2019-08-27T02:20:19.852Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - CNN - Detection - RCNN.png\u001b[39m","time":"2019-08-27T02:20:19.855Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mlib/jquery/index.js\u001b[39m","time":"2019-08-27T02:20:19.861Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - demo.gif\u001b[39m","time":"2019-08-27T02:20:19.874Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - ChineseOfficials2013 - cnpolitics.jpg\u001b[39m","time":"2019-08-27T02:20:19.874Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - GNMT - flow.gif\u001b[39m","time":"2019-08-27T02:20:19.875Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/足球 - 世界杯 - 2018 - C罗 - VS西班牙 - 帽子戏法2.gif\u001b[39m","time":"2019-08-27T02:20:19.885Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - dataflow.gif\u001b[39m","time":"2019-08-27T02:20:19.887Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/足球 - 世界杯 - 2018 - C罗 - VS西班牙 - 帽子戏法1.gif\u001b[39m","time":"2019-08-27T02:20:19.895Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/足球 - 世界杯 - 2018 - 梅西 - VS冰岛 - 囧1.gif\u001b[39m","time":"2019-08-27T02:20:19.895Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/足球 - 世界杯 - 2018 - C罗 - VS西班牙 - 帽子戏法3.gif\u001b[39m","time":"2019-08-27T02:20:19.896Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Audio - 音频 - 时域 - parallel wavenet.gif\u001b[39m","time":"2019-08-27T02:20:19.898Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - visualization - VGG56.png\u001b[39m","time":"2019-08-27T02:20:19.898Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mlib/velocity/velocity.js\u001b[39m","time":"2019-08-27T02:20:19.899Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/job_compare.png\u001b[39m","time":"2019-08-27T02:20:19.906Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - convseq2seq - flow.gif\u001b[39m","time":"2019-08-27T02:20:19.957Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Politics - 中国领导团队新阵容2018 - 人民日报.jpg\u001b[39m","time":"2019-08-27T02:20:19.962Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - TDNN - unit.tiff\u001b[39m","time":"2019-08-27T02:20:19.974Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Audio - 音频 - 时域 - wavenet.gif\u001b[39m","time":"2019-08-27T02:20:19.976Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/NN - transformer - universal transformer - flow.gif\u001b[39m","time":"2019-08-27T02:20:19.985Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"Generated: \u001b[35mimages/raw/Math - Fractal - Mandelbrot sequence.gif\u001b[39m","time":"2019-08-27T02:20:20.069Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":30,"msg":"274 files generated in \u001b[36m1.55 s\u001b[39m","time":"2019-08-27T02:20:20.069Z","v":0}
+{"name":"hexo","hostname":"xusongdeMBP.mshome.net","pid":66498,"level":20,"msg":"Database saved","time":"2019-08-27T02:20:20.124Z","v":0}

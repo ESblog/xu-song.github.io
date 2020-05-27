@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="emtKuCBSwP_Lnea7aB-7zRLW9DcVrzBUJlbMxRP_VrY">
+
+
+
+  <meta name="msvalidate.01" content="D07545095E3B3DED99406636136B159E">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-song.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-song.png?v=6.4.2">
+
+
+  <link rel="mask-icon" href="/images/logo-song.svg?v=6.4.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.4.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="简介TensorFlow 支持多种模型格式，但这些格式都有什么区别？ 名词 variable: 变量 graph: 计算图 MetaGraph  包含Graph和metadata信息  protobuf    全称Protocol Buffers，是Google开源的一个语言无关、平台无关 的序列化协议，用于不同应用或进程之间的通信。  优势: 文本文件结构跟xml，json等文件结构类似。优点是">
+<meta name="keywords" content="tensorflow,graph,serving">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tensorflow中的几种模型文件">
+<meta property="og:url" content="https://blog.eson.org/pub/3da24a26/index.html">
+<meta property="og:site_name" content="ESON">
+<meta property="og:description" content="简介TensorFlow 支持多种模型格式，但这些格式都有什么区别？ 名词 variable: 变量 graph: 计算图 MetaGraph  包含Graph和metadata信息  protobuf    全称Protocol Buffers，是Google开源的一个语言无关、平台无关 的序列化协议，用于不同应用或进程之间的通信。  优势: 文本文件结构跟xml，json等文件结构类似。优点是">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-08-27T02:34:34.015Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="tensorflow中的几种模型文件">
+<meta name="twitter:description" content="简介TensorFlow 支持多种模型格式，但这些格式都有什么区别？ 名词 variable: 变量 graph: 计算图 MetaGraph  包含Graph和metadata信息  protobuf    全称Protocol Buffers，是Google开源的一个语言无关、平台无关 的序列化协议，用于不同应用或进程之间的通信。  优势: 文本文件结构跟xml，json等文件结构类似。优点是">
+
+
+
+
+
+
+  <link rel="canonical" href="https://blog.eson.org/pub/3da24a26/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>tensorflow中的几种模型文件 | ESON</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115875587-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115875587-1');
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4144ca6f2a9b60f1feea7806f82aa6d0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ESON</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">Daily Notes</h1>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>时间轴</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>站内搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.eson.org/pub/3da24a26/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ESON">
+      <meta itemprop="description" content="学而不思则罔，思而不学则殆">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ESON">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">tensorflow中的几种模型文件
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-08-08 00:00:00" itemprop="dateCreated datePublished" datetime="2018-08-08T00:00:00+08:00">2018-08-08</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/" itemprop="url" rel="index"><span itemprop="name">ML</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/deep-learning/" itemprop="url" rel="index"><span itemprop="name">deep learning</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/deep-learning/toolbox/" itemprop="url" rel="index"><span itemprop="name">toolbox</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/deep-learning/toolbox/tensorflow/" itemprop="url" rel="index"><span itemprop="name">tensorflow</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/deep-learning/toolbox/tensorflow/graph-checkpoint/" itemprop="url" rel="index"><span itemprop="name">graph-checkpoint</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon" title="阅读次数">
+            <i class="fa fa-eye"></i>
+            
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数"></span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长"></span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>TensorFlow 支持多种模型格式，但这些格式都有什么区别？</p>
+<h2 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h2><ul>
+<li><a href="https://www.tensorflow.org/guide/variables" target="_blank" rel="noopener">variable</a>: 变量</li>
+<li><a href="https://www.tensorflow.org/guide/graphs" target="_blank" rel="noopener">graph</a>: 计算图</li>
+<li><a href="https://www.tensorflow.org/api_guides/python/meta_graph#What_s_in_a_MetaGraph" target="_blank" rel="noopener">MetaGraph</a><br>  包含Graph和metadata信息</li>
+</ul>
+<p><a href="https://www.tensorflow.org/extend/tool_developers/#protocol_buffers" target="_blank" rel="noopener">protobuf</a><br>    全称Protocol Buffers，是Google开源的一个<strong>语言无关</strong>、<strong>平台无关</strong> 的序列化协议，用于不同应用或进程之间的通信。</p>
+<ul>
+<li>优势: 文本文件结构跟xml，json等文件结构类似。优点是体积更小、解析速度更快</li>
+<li>格式: 支持binary、text两种格式</li>
+</ul>
+<h1 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h1><!-- 来自
+TensorFlow saves trained models in one of two ways: GraphDef and SavedModel; the TensorRT inference server supports both these formats. Once you have a trained model in TensorFlow you can save it as a GraphDef directly or convert it to a GraphDef by using a script like freeze_graph.py, or save it as a SavedModel using a SavedModelBuilder or tf.saved_model.simple_save. -->
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>saved model</th>
+<th>meta graph</th>
+<th>graph</th>
+<th>frozen graph</th>
+<th>web model</th>
+<th>ckp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>简介</td>
+<td></td>
+<td></td>
+<td></td>
+<td>打包graph和checkpoint到一个文件，并优化，便于部署</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>类</td>
+<td><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/protobuf/saved_model.proto" target="_blank" rel="noopener">SavedModel</a></td>
+<td><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/protobuf/meta_graph.proto" target="_blank" rel="noopener">MetaGraphDef</a></td>
+<td><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/graph.proto" target="_blank" rel="noopener">GraphDef</a></td>
+<td>GraphDef</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>包含内容</td>
+<td>meta graph</td>
+<td>GraphDef, MetaInfoDef, SaverDef, CollectionDef</td>
+<td>GraphDef</td>
+<td>GraphDef + value - variable</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>序列化格式</td>
+<td>protobuf</td>
+<td>protobuf</td>
+<td>protobuf</td>
+<td>protobuf</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>文件后缀</td>
+<td>.pb .pbtxt</td>
+<td>.meta .meta.txt</td>
+<td>.pb .pbtxt</td>
+<td>.pb .pbtxt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>文件示例</td>
+<td><a href>.pbtxt</a></td>
+<td><a href="https://github.com/xu-song/tensorflow_multi_language/blob/master/4.%20Frozen_model/demo_basic/model/ckpt.meta.txt" target="_blank" rel="noopener">.meta.txt</a></td>
+<td><a href="https://github.com/xu-song/tensorflow_multi_language/blob/master/4.%20Frozen_model/demo_basic/model/graph.pbtxt" target="_blank" rel="noopener">.pbtxt</a></td>
+<td><a href="https://github.com/xu-song/tensorflow_multi_language/blob/master/4.%20Frozen_model/demo_basic/model/frozen_graph.pbtxt" target="_blank" rel="noopener">.pbtxt</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>API-save</td>
+<td>SavedModelBuilder.save</td>
+<td>Saver.save或export_meta_graph</td>
+<td>write_graph</td>
+<td><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py" target="_blank" rel="noopener">freeze_graph.py</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>API-load</td>
+<td>saved_model.loader.load</td>
+<td>import_meta_graph</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>模型文件相关</strong></p>
+<ul>
+<li><a href="https://www.tensorflow.org/guide/checkpoints" target="_blank" rel="noopener">checkpoint (.ckpt)</a>:<ul>
+<li><code>variable</code>的序列化存储，常用于保存和还原模型参数。保存方式是变量name—&gt;value的映射</li>
+<li>缺陷：<strong>序列化内容与创建的代码相关</strong>，因此在跨语言时通常不采用这种格式</li>
+</ul>
+</li>
+<li><a href>SavedModel</a>: 同时包含<code>variable</code>、<code>graph</code>、graph’s metadata<ul>
+<li><code>Checkpoints</code> is a format dependent on the code that created the model(是指和模型版本相关吗？还是语言种类？). 不包含graph</li>
+<li><code>SavedModel</code> is a format independent of the code that created the model. 包含graph</li>
+</ul>
+</li>
+<li><strong>meta graph</strong>:<ul>
+<li>类: <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/protobuf/meta_graph.proto#L31" target="_blank" rel="noopener">MetaGraphDef </a>，包含<code>MetaInfoDef</code>、<code>GraphDef</code>、<code>SaverDef</code>、<code>CollectionDef</code></li>
+<li>序列化存储格式: protobuf, <code>.meta</code>文件</li>
+<li><a href="https://github.com/xu-song/tensorflow_multi_language/blob/master/4.%20Frozen_model/demo_basic/model/ckpt.meta.txt" target="_blank" rel="noopener">示例</a></li>
+</ul>
+</li>
+<li><a href="https://www.tensorflow.org/extend/tool_developers/#graphdef" target="_blank" rel="noopener">GraphDef (.pb)</a><ul>
+<li>Graph对象的protobuf保存形式为<a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/graph.proto" target="_blank" rel="noopener">GraphDef对象</a></li>
+<li><a href="https://github.com/xu-song/tensorflow_multi_language/blob/master/4.%20Frozen_model/demo_basic/model/graph.pbtxt" target="_blank" rel="noopener">示例</a></li>
+</ul>
+</li>
+<li>frozen graph:<ul>
+<li><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py" target="_blank" rel="noopener">freeze_graph.py</a>的操作: 将 GraphDef 中所有 Variable 节点转换为常量。<br><a href="https://www.tensorflow.org/extend/tool_developers/#freezing" target="_blank" rel="noopener">FrozenGraphDef</a>:<br>graph和variable分别存储在不同的文件，通常不利于部署到产品。<br>tensorflow提供<a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py" target="_blank" rel="noopener">freeze_graph.py</a>脚本将graph定义和checkpoint中的变量打包到一个文件。</li>
+<li>序列化存储格式: protobuf,  文件<ul>
+<li><a href="https://github.com/xu-song/tensorflow_multi_language/blob/master/4.%20Frozen_model/demo_basic/model/frozen_graph.pbtxt" target="_blank" rel="noopener">示例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>TensorFlow Lite model (.tflite): 轻量级模型格式 <code>*.lite</code>，和 FrozenGraphDef 十分类似</li>
+</ul>
+<p>部署在线服务（Serving）时官方推荐使用 SavedModel 格式，而部署到手机等移动端的模型一般使用 FrozenGraphDef 格式</p>
+<h1 id="tensorflow常用的模型文件，save-amp-restore"><a href="#tensorflow常用的模型文件，save-amp-restore" class="headerlink" title="tensorflow常用的模型文件，save &amp; restore"></a>tensorflow常用的模型文件，save &amp; restore</h1><ul>
+<li><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/README.md" target="_blank" rel="noopener">SavedModel</a><ul>
+<li>内容: variables, graph, graph’s metadata</li>
+<li>用途: 常用与python接口</li>
+<li>文件: 格式为</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">assets/</span><br><span class="line">assets.extra/</span><br><span class="line">variables/</span><br><span class="line">    variables.data-?????-of-?????</span><br><span class="line">    variables.index</span><br><span class="line">saved_model.pb</span><br></pre></td></tr></table></figure>
+<p>-<a href="https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model" target="_blank" rel="noopener">Keras h5</a> keras模型，格式为<code>.h5</code></p>
+<ul>
+<li><a href="https://www.tensorflow.org/mobile/prepare_models#how_do_you_get_a_model_you_can_use_on_mobile" target="_blank" rel="noopener">Frozen Model</a><ul>
+<li>用途: 常用于C++、Java的接口，移动端。</li>
+<li>文件: <code>Frozen Model</code>包含一个<code>.pb</code>文件，其中包括了所有网络结构以及所有模型参数。</li>
+</ul>
+</li>
+<li><a href="https://github.com/tensorflow/tfjs-converter" target="_blank" rel="noopener">tensorflowjs</a><ul>
+<li>用途: web格式，</li>
+<li>文件: <code>.pb</code> <code>.json</code>(方便web读取)，等格式</li>
+</ul>
+</li>
+<li><a href="https://www.tensorflow.org/hub/" target="_blank" rel="noopener">Tensorflow Hub module</a> 实验阶段，尚未成熟<ul>
+<li>用途: web-friendly format</li>
+</ul>
+</li>
+<li><a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/session_bundle/README.md" target="_blank" rel="noopener">Session Bundle</a> 已弃用</li>
+</ul>
+<p>Tensorflow 保存模型的几种方式：</p>
+<ul>
+<li><strong><a href="https://www.tensorflow.org/api_docs/python/tf/train/Saver" target="_blank" rel="noopener">tf.train.Saver-&gt;save</a></strong>:<ul>
+<li>官方文档: save and restore variables to and from checkpoints</li>
+<li>大白话: 保存变量(checkpoints)，但不保存graph，即<code>MetaGraphDef</code>。所以只给 checkpoint 模型不提供代码是无法重新构建计算图的，不能直接用于serving</li>
+<li>restore: <a href="https://www.tensorflow.org/api_docs/python/tf/train/Saver#restore" target="_blank" rel="noopener">saver.restore</a> 或 <a href="https://www.tensorflow.org/api_docs/python/tf/train/Saver#recover_last_checkpoints" target="_blank" rel="noopener">saver.recover_last_checkpoints</a></li>
+<li>完整示例：<a href="https://www.tensorflow.org/guide/saved_model#save_and_restore_variables" target="_blank" rel="noopener">save_and_restore_variables | tensorflow</a></li>
+</ul>
+</li>
+<li><strong><a href="https://www.tensorflow.org/api_docs/python/tf/train/export_meta_graph" target="_blank" rel="noopener">tf.train.export_meta_graph与tf.train.Saver-&gt;export_meta_graph</a></strong><ul>
+<li>官方文档: exports the graph, saver, and collection objects into <code>MetaGraphDef</code> protocol buffer</li>
+<li>大白话:</li>
+<li>restore: <a href="https://www.tensorflow.org/api_docs/python/tf/train/import_meta_graph" target="_blank" rel="noopener">tf.train.import_meta_graph</a></li>
+<li>完整示例: <a href="https://www.tensorflow.org/api_guides/python/meta_graph" target="_blank" rel="noopener">Exporting and Importing a MetaGraph | tensorflow</a></li>
+</ul>
+</li>
+<li><strong><a href="https://www.tensorflow.org/api_docs/python/tf/saved_model/builder/SavedModelBuilder" target="_blank" rel="noopener">SavedModelBuilder</a></strong>: 用于serving<ul>
+<li>官方文档: Builds the SavedModel protocol buffer. Meta graph must be saved with variables.</li>
+<li>大白话: 保存<code>SavedModel</code>，同时包含graph和variable</li>
+<li>restore: <a href="https://www.tensorflow.org/api_docs/python/tf/saved_model/loader/load" target="_blank" rel="noopener">tf.saved_model.loader.load</a> 根据tag加载<code>SavedModel</code></li>
+</ul>
+</li>
+<li><strong>Exporter</strong>: 用于serving</li>
+</ul>
+<h1 id="checkpoint"><a href="#checkpoint" class="headerlink" title="checkpoint"></a>checkpoint</h1><p>典型的tensorflow模型包含4种文件</p>
+<ul>
+<li><strong>graph.pbtxt</strong>:</li>
+<li><strong>model.ckpt.meta</strong>: 包含全部graph信息。这是一个序列化的MetaGraphDef protocol buffer，包含数据流、变量的annotations、input pipelines，以及其他相关信息</li>
+<li><strong>model.ckpt.data-0000-of-00001</strong>: 包含所有变量的值(weights, biases, placeholders,gradients, hyper-parameters etc).</li>
+<li><strong>model.ckpt.index</strong>: metadata. [ It’s an immutable table(tensoflow::table::Table). Each key is a name of a Tensor and it’s value is a serialized BundleEntryProto. Each BundleEntryProto describes the metadata of a Tensor]</li>
+<li><strong>checkpoint</strong>: All checkpoint information</li>
+</ul>
+<p>疑问graph.pbtxt 与model.ckpt.meta的区别。答：基本是一样的，都包含</p>
+<h1 id="SavedModel"><a href="#SavedModel" class="headerlink" title="SavedModel"></a>SavedModel</h1><p>SavedModel用于保存和加载模型(variables, graph, graph’s<br>metadata)。这是一种语言无关的、可复原的序列化格式。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|--save-model.pb</span><br><span class="line">|--variable</span><br><span class="line">|-- |--variables.data-00000-of-00001</span><br><span class="line">|-- |--variables.index</span><br></pre></td></tr></table></figure>
+<p><code>.pb</code>与<code>.pbtxt</code>都是SavedModel的protobuf存储格式，区别是前者是二进制文件，后者是txt文件（方便阅读）。<a href="https://www.tensorflow.org/extend/tool_developers/#text_or_binary" target="_blank" rel="noopener">来源</a></p>
+<p>从 SavedModel 中可以提取 GraphDef 和 CheckPoint 对象。</p>
+<p>GraphDef的缺陷是不包含graph，的缺陷是单靠graph无法还原整个模型计算</p>
+<h2 id="save-amp-restore"><a href="#save-amp-restore" class="headerlink" title="save &amp; restore"></a>save &amp; restore</h2><p>常用的API</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">builder = tf.saved_model.builder.SavedModelBuilder(export_dir)</span><br></pre></td></tr></table></figure>
+<p>load graph using .meta file and restore weights inside a session). Convert the graph to graph_def.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">saver = tf.train.import_meta_graph(<span class="string">'./dogs-cats-model.meta'</span>, clear_devices=<span class="keyword">True</span>)</span><br><span class="line">graph = tf.get_default_graph()</span><br><span class="line">input_graph_def = graph.as_graph_def()</span><br><span class="line">sess = tf.Session()</span><br><span class="line">saver.restore(sess, <span class="string">"./dogs-cats-model"</span>)</span><br></pre></td></tr></table></figure>
+<p>参考: <a href="https://www.tensorflow.org/guide/saved_model#save_and_restore_models" target="_blank" rel="noopener">https://www.tensorflow.org/guide/saved_model#save_and_restore_models</a></p>
+<h1 id="Frozen-Model-Graph"><a href="#Frozen-Model-Graph" class="headerlink" title="Frozen Model/Graph"></a>Frozen Model/Graph</h1><p>TensorFlow 一些例程中用到 *.pb 文件作为预训练模型，这和上面 GraphDef 格式稍有不同，<br>属于冻结（Frozen）后的 GraphDef 文件，简称 FrozenGraphDef 格式。这种文件格式不包含 Variables 节点。<br>将 GraphDef 中所有 Variable 节点转换为常量（其值从 checkpoint 获取），就变为 FrozenGraphDef 格式。代码可以参考 tensorflow/python/tools/freeze_graph.py</p>
+<h2 id="什么是Frozen-Model-Graph？为什么要Freeze？"><a href="#什么是Frozen-Model-Graph？为什么要Freeze？" class="headerlink" title="什么是Frozen Model/Graph？为什么要Freeze？"></a>什么是Frozen Model/Graph？为什么要Freeze？</h2><p>Tensorflow的<code>SavedModel</code>文件包含graph、模型参数、梯度信息(用于训练时的BP)等。然而，在部署环境下一般用不到梯度信息，也就<strong>没必要加载所有的SavedModel文件</strong>。</p>
+<p><code>Freezing</code>过程会对<code>SavedModel</code>进行<strong>过滤</strong>，只包含必要的信息(graph, weights etc) ，并<strong>打包到一个文件</strong>便于应用。<br><!-- encapsulate all in a single file  --></p>
+<p><code>Freezing</code>过程通常会去除掉<code>SavedModel</code>中不必要的meta-data、梯度，以及不必要的训练参数，并打包为<code>.pb</code>文件。这个文件就叫做<br><code>Frozen Model/Graph</code></p>
+<h2 id="怎样Freeze？"><a href="#怎样Freeze？" class="headerlink" title="怎样Freeze？"></a>怎样Freeze？</h2><p>有两种方式：</p>
+<h1 id="Keras-h5"><a href="#Keras-h5" class="headerlink" title="Keras h5"></a>Keras h5</h1><h1 id="Tensorflow-Hub-module"><a href="#Tensorflow-Hub-module" class="headerlink" title="Tensorflow Hub module"></a>Tensorflow Hub module</h1><h1 id="tensorflowjs"><a href="#tensorflowjs" class="headerlink" title="tensorflowjs"></a>tensorflowjs</h1><h1 id="格式转换"><a href="#格式转换" class="headerlink" title="格式转换"></a>格式转换</h1><ul>
+<li><a href="https://www.tensorflow.org/mobile/tflite/devguide#2_convert_the_model_format" target="_blank" rel="noopener">https://www.tensorflow.org/mobile/tflite/devguide#2_convert_the_model_format</a></li>
+<li><a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms" target="_blank" rel="noopener">https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms</a></li>
+</ul>
+<h2 id="saver文件"><a href="#saver文件" class="headerlink" title="saver文件"></a>saver文件</h2><p>load the checkpoints<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">saver = tf.train.import_meta_graph(<span class="string">'model-number.meta'</span>)</span><br><span class="line">saver.restore(sess, tf.train.latest_checkpoint(<span class="string">'./'</span>))</span><br></pre></td></tr></table></figure></p>
+<h1 id="扩展阅读"><a href="#扩展阅读" class="headerlink" title="扩展阅读"></a>扩展阅读</h1><h2 id="模型文件相关"><a href="#模型文件相关" class="headerlink" title="模型文件相关"></a>模型文件相关</h2><p><strong>frozen-model相关</strong></p>
+<ul>
+<li><a href="https://cv-tricks.com/how-to/freeze-tensorflow-models/" target="_blank" rel="noopener">Freeze Tensorflow models and serve on web</a></li>
+</ul>
+<p><strong>SavedModelBuilder相关</strong></p>
+<ul>
+<li><a href="https://www.tensorflow.org/serving/serving_basic" target="_blank" rel="noopener">Serving a TensorFlow Model</a><br>-</li>
+</ul>
+<p><strong>tensorflowjs相关</strong></p>
+<p>tfjs-converter</p>
+<h2 id="跨语言相关"><a href="#跨语言相关" class="headerlink" title="跨语言相关"></a>跨语言相关</h2><p>ic)<br>-</p>
+<p><strong>tensorflowjs相关</strong></p>
+<p>tfjs-converter</p>
+<h2 id="跨语言相关-1"><a href="#跨语言相关-1" class="headerlink" title="跨语言相关"></a>跨语言相关</h2>
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>ESON</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.eson.org/pub/3da24a26/" title="tensorflow中的几种模型文件">https://blog.eson.org/pub/3da24a26/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tensorflow/" rel="tag"># tensorflow</a>
+          
+            <a href="/tags/graph/" rel="tag"># graph</a>
+          
+            <a href="/tags/serving/" rel="tag"># serving</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/pub/f81ec361/" rel="next" title="【RNN系列】RNN的变种 以及提高RNN训练速度的多种方法">
+                <i class="fa fa-chevron-left"></i> 【RNN系列】RNN的变种 以及提高RNN训练速度的多种方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/pub/e85b0673/" rel="prev" title="softmax的困扰、改进">
+                softmax的困扰、改进 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="ESON">
+            
+              <p class="site-author-name" itemprop="name">ESON</p>
+              <p class="site-description motion-element" itemprop="description">学而不思则罔，思而不学则殆</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">145</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">145</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">122</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/xu-song" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:xusong.vip@gmail.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://gitter.im/esonxu/general" target="_blank" title="Chat" rel="external nofollow"><i class="fa fa-fw fa-gitter"></i>Chat</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.facebook.com/xusong666" target="_blank" title="FB Page" rel="external nofollow"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">
+              </a>
+            </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#名词"><span class="nav-number">1.1.</span> <span class="nav-text">名词</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#综述"><span class="nav-number">2.</span> <span class="nav-text">综述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tensorflow常用的模型文件，save-amp-restore"><span class="nav-number">3.</span> <span class="nav-text">tensorflow常用的模型文件，save &amp; restore</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#checkpoint"><span class="nav-number">4.</span> <span class="nav-text">checkpoint</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SavedModel"><span class="nav-number">5.</span> <span class="nav-text">SavedModel</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#save-amp-restore"><span class="nav-number">5.1.</span> <span class="nav-text">save &amp; restore</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Frozen-Model-Graph"><span class="nav-number">6.</span> <span class="nav-text">Frozen Model/Graph</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Frozen-Model-Graph？为什么要Freeze？"><span class="nav-number">6.1.</span> <span class="nav-text">什么是Frozen Model/Graph？为什么要Freeze？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎样Freeze？"><span class="nav-number">6.2.</span> <span class="nav-text">怎样Freeze？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Keras-h5"><span class="nav-number">7.</span> <span class="nav-text">Keras h5</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Tensorflow-Hub-module"><span class="nav-number">8.</span> <span class="nav-text">Tensorflow Hub module</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tensorflowjs"><span class="nav-number">9.</span> <span class="nav-text">tensorflowjs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#格式转换"><span class="nav-number">10.</span> <span class="nav-text">格式转换</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#saver文件"><span class="nav-number">10.1.</span> <span class="nav-text">saver文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#扩展阅读"><span class="nav-number">11.</span> <span class="nav-text">扩展阅读</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模型文件相关"><span class="nav-number">11.1.</span> <span class="nav-text">模型文件相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨语言相关"><span class="nav-number">11.2.</span> <span class="nav-text">跨语言相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨语言相关-1"><span class="nav-number">11.3.</span> <span class="nav-text">跨语言相关</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ESON</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数"></span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长"></span>
+  
+</div>
+
+
+  
+
+
+
+
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" rel="external nofollow" href="https://theme-next.org">NexT.Gemini</a> v6.4.2</div>
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+        <script src="/js/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitment({
+            id: window.location.pathname,
+            owner: 'ESblog',
+            repo: 'esblog.github.io',
+            
+            oauth: {
+            
+            
+                client_secret: '6dbf6ffc70aae144a5f8b6dbc22d37d7616e9873',
+            
+                client_id: '04d744b92792c6240a8f'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 14529,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/exturl.js?v=6.4.2"></script>
+
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
