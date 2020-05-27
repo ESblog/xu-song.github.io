@@ -121,7 +121,7 @@
 <meta name="keywords" content="机器学习, 计算机视觉, 深度学习, 自然语言处理, ESON">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ESON">
-<meta property="og:url" content="https://blog.eson.org/tags/rnn/index.html">
+<meta property="og:url" content="https://blog.eson.org/tags/RNN/index.html">
 <meta property="og:site_name" content="ESON">
 <meta property="og:description" content="学而不思则罔，思而不学则殆">
 <meta property="og:locale" content="zh-CN">
@@ -134,7 +134,7 @@
 
 
 
-  <link rel="canonical" href="https://blog.eson.org/tags/rnn/">
+  <link rel="canonical" href="https://blog.eson.org/tags/RNN/">
 
 
 
@@ -144,7 +144,7 @@
   };
 </script>
 
-  <title>标签: rnn | ESON</title>
+  <title>标签: RNN | ESON</title>
   
 
 
@@ -367,7 +367,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h2>rnn<small>标签</small>
+        <h2>RNN<small>标签</small>
         </h2>
       </div>
 
@@ -379,69 +379,17 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/pub/c79f2f90/" itemprop="url">
+            <a class="post-title-link" href="/pub/6eefa992/" itemprop="url">
               
-                <span itemprop="name">【RNN系列】GRU简介 & 源码实现</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-02-06T19:08:53+08:00" content="2018-02-06">
-          02-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/pub/d66c7262/" itemprop="url">
-              
-                <span itemprop="name">【深度学习-RNN系列】递归神经网络 RNN (从HMM到RNN)</span>
+                <span itemprop="name">【机器翻译】RNN系列 - GNMT</span>
               
             </a>
         
       </h3>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-02-06T19:08:53+08:00" content="2018-02-06">
-          02-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/pub/a6941437/" itemprop="url">
-              
-                <span itemprop="name">【RNN系列】长短期记忆 LSTM （从RNN到LSTM）</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-02-06T19:08:53+08:00" content="2018-02-06">
-          02-06
+        <time class="post-time" itemprop="dateCreated" datetime="2018-06-20T00:00:00+08:00" content="2018-06-20">
+          06-20
         </time>
       </div>
 
@@ -500,7 +448,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">145</span>
+                    <span class="site-state-item-count">142</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -801,9 +749,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">145</span>
+                    <span class="site-state-item-count">144</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1722,6 +1668,56 @@
       transition: opacity .3s ease-in-out;
       opacity: 0;
       padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
+px;
       position: absolute;
       right: 4px;
       top: 8px;
