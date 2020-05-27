@@ -117,18 +117,18 @@
 
 
 
-  <meta name="description" content="为什么要看源码能够更便捷高效的管理博客，比如  更新Hexo: 需要了解hexo init的源码，因为该命令隐藏了hexo-starter项目 () 更新theme: 某些bug-fix以及new feature。可借助git的submodule来高效管理 定制博客(个性化): (比如添加edit button，添加URL哈希，个性化主题。需要了解模板原理  源码不用细看，看个大概能满足自己的需求">
+  <meta name="description" content="首先为什么要看源码呢？因为想自己更便捷高效的管理博客，比如  如何更新Hexo。(需要看hexo init的源码，因为该命令隐藏了hexo-starter项目) 如何更新theme。某些bug-fix&amp;amp;新功能。(需要借助git的submodule来高效管理) 如何自己实现一个新功能(比如添加edit button，添加URL哈希。需要了解模板原理)  源码不用细看，看个大概能满足自己的需求">
 <meta name="keywords" content="hexo,源码,原理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【hexo源码系列】 入门">
 <meta property="og:url" content="https://blog.eson.org/pub/70d0eddc/index.html">
 <meta property="og:site_name" content="ESON">
-<meta property="og:description" content="为什么要看源码能够更便捷高效的管理博客，比如  更新Hexo: 需要了解hexo init的源码，因为该命令隐藏了hexo-starter项目 () 更新theme: 某些bug-fix以及new feature。可借助git的submodule来高效管理 定制博客(个性化): (比如添加edit button，添加URL哈希，个性化主题。需要了解模板原理  源码不用细看，看个大概能满足自己的需求">
+<meta property="og:description" content="首先为什么要看源码呢？因为想自己更便捷高效的管理博客，比如  如何更新Hexo。(需要看hexo init的源码，因为该命令隐藏了hexo-starter项目) 如何更新theme。某些bug-fix&amp;amp;新功能。(需要借助git的submodule来高效管理) 如何自己实现一个新功能(比如添加edit button，添加URL哈希。需要了解模板原理)  源码不用细看，看个大概能满足自己的需求">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-27T02:34:33.889Z">
+<meta property="og:updated_time" content="2019-08-27T02:34:33.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【hexo源码系列】 入门">
-<meta name="twitter:description" content="为什么要看源码能够更便捷高效的管理博客，比如  更新Hexo: 需要了解hexo init的源码，因为该命令隐藏了hexo-starter项目 () 更新theme: 某些bug-fix以及new feature。可借助git的submodule来高效管理 定制博客(个性化): (比如添加edit button，添加URL哈希，个性化主题。需要了解模板原理  源码不用细看，看个大概能满足自己的需求">
+<meta name="twitter:description" content="首先为什么要看源码呢？因为想自己更便捷高效的管理博客，比如  如何更新Hexo。(需要看hexo init的源码，因为该命令隐藏了hexo-starter项目) 如何更新theme。某些bug-fix&amp;amp;新功能。(需要借助git的submodule来高效管理) 如何自己实现一个新功能(比如添加edit button，添加URL哈希。需要了解模板原理)  源码不用细看，看个大概能满足自己的需求">
 
 
 
@@ -439,13 +439,6 @@
 
                 
                 
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CS/web/blog-framework/nodejs-hexo/src/" itemprop="url" rel="index"><span itemprop="name">src</span></a></span>
-
-                
-                
               
             </span>
           
@@ -511,11 +504,11 @@
       
 
       
-        <h1 id="为什么要看源码"><a href="#为什么要看源码" class="headerlink" title="为什么要看源码"></a>为什么要看源码</h1><p>能够更便捷高效的管理博客，比如</p>
+        <h1 id="首先"><a href="#首先" class="headerlink" title="首先"></a>首先</h1><p>为什么要看源码呢？因为想自己更便捷高效的管理博客，比如</p>
 <ul>
-<li><strong>更新Hexo</strong>: 需要了解<code>hexo init</code>的源码，因为该命令隐藏了<code>hexo-starter</code>项目 ()</li>
-<li><strong>更新theme</strong>: 某些<code>bug-fix</code>以及<code>new feature</code>。可借助git的<code>submodule</code>来高效管理</li>
-<li><strong>定制博客(个性化)</strong>: (比如添加edit button，添加URL哈希，个性化主题。需要了解模板原理</li>
+<li>如何更新Hexo。(需要看<code>hexo init</code>的源码，因为该命令隐藏了<code>hexo-starter</code>项目)</li>
+<li>如何更新theme。某些bug-fix&amp;新功能。(需要借助git的submodule来高效管理)</li>
+<li>如何自己实现一个新功能(比如添加edit button，添加URL哈希。需要了解模板原理)</li>
 </ul>
 <p>源码不用细看，看个大概能满足自己的需求就够了。</p>
 <p>本文仅介绍<a href="https://github.com/hexojs/hexo-starter" target="_blank" rel="noopener">Hexo基础包</a>，<a href="https://hexo.io/plugins/" target="_blank" rel="noopener">扩展包</a>可参考【Hexo插件系列】博客。</p>
@@ -525,6 +518,23 @@
 <blockquote>
 <p>更新各个模块，命令 npm update</p>
 </blockquote>
+<ul>
+<li>hexo-cli，<ul>
+<li>提供hexo init、hexo help、hexo version命令</li>
+</ul>
+</li>
+<li>hexo<ul>
+<li>hexo new</li>
+<li>hexo generate</li>
+</ul>
+</li>
+<li>hexo plugin，即node依赖<ul>
+<li>hexo server</li>
+<li>hexo deploy</li>
+<li>其他命令</li>
+</ul>
+</li>
+</ul>
 <h1 id="回顾Hexo搭建流程"><a href="#回顾Hexo搭建流程" class="headerlink" title="回顾Hexo搭建流程"></a>回顾Hexo搭建流程</h1><p>以下来自<a href="https://github.com/hexojs/hexo/blob/master/README.md" target="_blank" rel="noopener">官方文档</a></p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. Installation</span></span><br><span class="line">$ npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. Setup your blog</span></span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. Start the server</span></span><br><span class="line">$ hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. Create a new post</span></span><br><span class="line">$ hexo new <span class="string">"Hello Hexo"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 5. Generate static files</span></span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <h1 id="流程详解"><a href="#流程详解" class="headerlink" title="流程详解"></a>流程详解</h1><h2 id="1-npm-install"><a href="#1-npm-install" class="headerlink" title="1. npm install"></a>1. npm install</h2><p>npm是nodejs的包管理器，管理javascript lib<br>hexo-cli是nodejs的一个包，用于运行hexo命令。(有cli难道还有server？)</p>
@@ -595,6 +605,7 @@
 <li><a href="http://cherryblog.site/hexo-4.html" target="_blank" rel="noopener">深入理解 Hexo</a></li>
 <li><a href="http://coderunthings.com/2017/08/20/howhexoworks/" target="_blank" rel="noopener">hexo是怎么工作的</a><h2 id="7-Hexo-的模板引擎"><a href="#7-Hexo-的模板引擎" class="headerlink" title="7. Hexo 的模板引擎"></a>7. Hexo 的模板引擎</h2>这个<code>render</code>讲道理应该是在<code>hexo g</code>的时候调用的。 待看</li>
 </ul>
+<h1 id="如何debug-hexo"><a href="#如何debug-hexo" class="headerlink" title="如何debug hexo"></a>如何debug hexo</h1><p>调试hexo，实质就是调试nodejs</p>
 
       
     </div>
@@ -702,8 +713,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/pub/3329d7fc/" rel="next" title="google云主机---GCE">
-                <i class="fa fa-chevron-left"></i> google云主机---GCE
+              <a href="/pub/9ff21bc3/" rel="next" title="渣渣中的渣渣 之 DaoVoice">
+                <i class="fa fa-chevron-left"></i> 渣渣中的渣渣 之 DaoVoice
               </a>
             
           </div>
@@ -1395,7 +1406,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么要看源码"><span class="nav-number">1.</span> <span class="nav-text">为什么要看源码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看Hexo和Plugin版本"><span class="nav-number">2.</span> <span class="nav-text">查看Hexo和Plugin版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#回顾Hexo搭建流程"><span class="nav-number">3.</span> <span class="nav-text">回顾Hexo搭建流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流程详解"><span class="nav-number">4.</span> <span class="nav-text">流程详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-npm-install"><span class="nav-number">4.1.</span> <span class="nav-text">1. npm install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-hexo-init"><span class="nav-number">4.2.</span> <span class="nav-text">2. hexo init</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#答案"><span class="nav-number">4.2.1.</span> <span class="nav-text">答案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#追寻答案的旅程-optional"><span class="nav-number">4.2.2.</span> <span class="nav-text">追寻答案的旅程 - optional</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-hexo-server"><span class="nav-number">4.3.</span> <span class="nav-text">3. hexo server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-hexo-new"><span class="nav-number">4.4.</span> <span class="nav-text">4. hexo new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-hexo-generate"><span class="nav-number">4.5.</span> <span class="nav-text">5. hexo generate</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#generator"><span class="nav-number">4.5.1.</span> <span class="nav-text">generator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#render-模板引擎"><span class="nav-number">4.5.2.</span> <span class="nav-text">render 模板引擎</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的填充"><span class="nav-number">4.5.3.</span> <span class="nav-text">数据的填充</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-hexo-deploy"><span class="nav-number">4.6.</span> <span class="nav-text">6. hexo deploy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Hexo-的模板引擎"><span class="nav-number">4.7.</span> <span class="nav-text">7. Hexo 的模板引擎</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首先"><span class="nav-number">1.</span> <span class="nav-text">首先</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看Hexo和Plugin版本"><span class="nav-number">2.</span> <span class="nav-text">查看Hexo和Plugin版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#回顾Hexo搭建流程"><span class="nav-number">3.</span> <span class="nav-text">回顾Hexo搭建流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流程详解"><span class="nav-number">4.</span> <span class="nav-text">流程详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-npm-install"><span class="nav-number">4.1.</span> <span class="nav-text">1. npm install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-hexo-init"><span class="nav-number">4.2.</span> <span class="nav-text">2. hexo init</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#答案"><span class="nav-number">4.2.1.</span> <span class="nav-text">答案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#追寻答案的旅程-optional"><span class="nav-number">4.2.2.</span> <span class="nav-text">追寻答案的旅程 - optional</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-hexo-server"><span class="nav-number">4.3.</span> <span class="nav-text">3. hexo server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-hexo-new"><span class="nav-number">4.4.</span> <span class="nav-text">4. hexo new</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-hexo-generate"><span class="nav-number">4.5.</span> <span class="nav-text">5. hexo generate</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#generator"><span class="nav-number">4.5.1.</span> <span class="nav-text">generator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#render-模板引擎"><span class="nav-number">4.5.2.</span> <span class="nav-text">render 模板引擎</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据的填充"><span class="nav-number">4.5.3.</span> <span class="nav-text">数据的填充</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-hexo-deploy"><span class="nav-number">4.6.</span> <span class="nav-text">6. hexo deploy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Hexo-的模板引擎"><span class="nav-number">4.7.</span> <span class="nav-text">7. Hexo 的模板引擎</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何debug-hexo"><span class="nav-number">5.</span> <span class="nav-text">如何debug hexo</span></a></li></ol></div>
             
 
           </div>
