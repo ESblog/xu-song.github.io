@@ -117,25 +117,24 @@
 
 
 
-  <meta name="description" content="逻辑斯谛回归（logistic regression）是统计学习中的经典分类⽅法。最⼤熵是概率模型学习的⼀个准则，将其推⼴到分类问题得到最⼤熵模型（maximum entropy model）。逻辑斯谛回归模型与最⼤熵模型都属于对数线性模型。 逻辑斯蒂分布，logit转换⾸先介绍逻辑斯谛分布（logistic distribution） 定义6.1（逻辑斯谛分布）　设X是连续随机变量，X服从逻辑斯">
+  <meta name="description" content="学而不思则罔，思而不学则殆">
 <meta name="keywords" content="机器学习, 计算机视觉, 深度学习, 自然语言处理, ESON">
-<meta property="og:type" content="article">
-<meta property="og:title" content="逻辑斯谛回归与最⼤熵模型">
-<meta property="og:url" content="https://blog.eson.org/pub/fefe3ccb/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ESON">
+<meta property="og:url" content="https://blog.eson.org/categories/ML/app/nlp/translation/2-主流model-研究现状/2-NMT/transformer/index.html">
 <meta property="og:site_name" content="ESON">
-<meta property="og:description" content="逻辑斯谛回归（logistic regression）是统计学习中的经典分类⽅法。最⼤熵是概率模型学习的⼀个准则，将其推⼴到分类问题得到最⼤熵模型（maximum entropy model）。逻辑斯谛回归模型与最⼤熵模型都属于对数线性模型。 逻辑斯蒂分布，logit转换⾸先介绍逻辑斯谛分布（logistic distribution） 定义6.1（逻辑斯谛分布）　设X是连续随机变量，X服从逻辑斯">
+<meta property="og:description" content="学而不思则罔，思而不学则殆">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-27T02:34:34.023Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="逻辑斯谛回归与最⼤熵模型">
-<meta name="twitter:description" content="逻辑斯谛回归（logistic regression）是统计学习中的经典分类⽅法。最⼤熵是概率模型学习的⼀个准则，将其推⼴到分类问题得到最⼤熵模型（maximum entropy model）。逻辑斯谛回归模型与最⼤熵模型都属于对数线性模型。 逻辑斯蒂分布，logit转换⾸先介绍逻辑斯谛分布（logistic distribution） 定义6.1（逻辑斯谛分布）　设X是连续随机变量，X服从逻辑斯">
+<meta name="twitter:title" content="ESON">
+<meta name="twitter:description" content="学而不思则罔，思而不学则殆">
 
 
 
 
 
 
-  <link rel="canonical" href="https://blog.eson.org/pub/fefe3ccb/">
+  <link rel="canonical" href="https://blog.eson.org/categories/ML/app/nlp/translation/2-主流model-研究现状/2-NMT/transformer/">
 
 
 
@@ -145,7 +144,7 @@
   };
 </script>
 
-  <title>逻辑斯谛回归与最⼤熵模型 | ESON</title>
+  <title>分类: transformer | ESON</title>
   
 
 
@@ -211,7 +210,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,7 +267,7 @@
         
         
           
-          <li class="menu-item menu-item-categories">
+          <li class="menu-item menu-item-categories menu-item-active">
     <a href="/categories/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
   </li>
@@ -338,285 +337,80 @@
           
             
 
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
           
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block category">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h2>transformer<small>分类</small>
+        </h2>
+      </div>
 
-  
-  
-  
-
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.eson.org/pub/fefe3ccb/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ESON">
-      <meta itemprop="description" content="学而不思则罔，思而不学则殆">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ESON">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h3 class="post-title">
         
+            <a class="post-title-link" href="/pub/664e9bad/" itemprop="url">
+              
+                <span itemprop="name">【机器翻译】transformer</span>
+              
+            </a>
         
-          <h2 class="post-title" itemprop="name headline">逻辑斯谛回归与最⼤熵模型
-              
-            
-          </h2>
-        
+      </h3>
 
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-27 10:34:34" itemprop="dateCreated datePublished" datetime="2019-08-27T10:34:34+08:00">2019-08-27</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/" itemprop="url" rel="index"><span itemprop="name">ML</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/ml-传统方法/" itemprop="url" rel="index"><span itemprop="name">ml 传统方法</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/ml-传统方法/supervised/" itemprop="url" rel="index"><span itemprop="name">supervised</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/ml-传统方法/supervised/广义线性模型/" itemprop="url" rel="index"><span itemprop="name">广义线性模型</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ML/ml-传统方法/supervised/广义线性模型/对数线性模型/" itemprop="url" rel="index"><span itemprop="name">对数线性模型</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon" title="阅读次数">
-            <i class="fa fa-eye"></i>
-            
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-            </span>
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数"></span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长"></span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>逻辑斯谛回归（logistic regression）是统计学习中的经典分类⽅法。最⼤熵是概率模型学习的⼀个准<br>则，将其推⼴到分类问题得到最⼤熵模型（maximum entropy model）。逻辑斯谛回归模型与最⼤熵模型都<br>属于对数线性模型。</p>
-<h1 id="逻辑斯蒂分布，logit转换"><a href="#逻辑斯蒂分布，logit转换" class="headerlink" title="逻辑斯蒂分布，logit转换"></a>逻辑斯蒂分布，logit转换</h1><p>⾸先介绍逻辑斯谛分布（logistic distribution）</p>
-<p>定义6.1（逻辑斯谛分布）　设X是连续随机变量，X服从逻辑斯谛分布是指X具有下列分布函数和密度<br>函数：</p>
-<p>逻辑斯谛分布的密度函数f(x)和分布函数F(x)的图形如图6.1所⽰。分布函数属于逻辑斯谛函数，其图<br>形是⼀条S形曲线（sigmoid curve）</p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>李航</p>
-
-      
-    </div>
-
-    
-      
-
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>ESON</li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://blog.eson.org/pub/fefe3ccb/" title="逻辑斯谛回归与最⼤熵模型">https://blog.eson.org/pub/fefe3ccb/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
-</ul>
-
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2018-05-01T00:00:00+08:00" content="2018-05-01">
+          05-01
+        </time>
       </div>
-    
 
-    <footer class="post-footer">
-      
-
-      
-      
-        <div class="post-widgets">
-        
-          <div class="wp_rating">
-            <div id="wpac-rating"></div>
-          </div>
-        
-
-        
-
-        
-        </div>
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/pub/ab77a378/" rel="next" title="准RNN Quasi-recurrent Neural Networks">
-                <i class="fa fa-chevron-left"></i> 准RNN Quasi-recurrent Neural Networks
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/pub/980c5a0f/" rel="prev" title="SVD、PCA、LDA、LSA、PLSA、LDA">
-                SVD、PCA、LDA、LSA、PLSA、LDA <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
+      
+    </div>
+
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
-    </div>
-
-  
-
-
 
         </div>
         
@@ -637,17 +431,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -664,7 +449,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">142</span>
+                    <span class="site-state-item-count">133</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -949,23 +734,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">144</span>
+                    <span class="site-state-item-count">136</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1220,9 +989,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">122</span>
+                    <span class="site-state-item-count">121</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1278,22 +1045,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#逻辑斯蒂分布，logit转换"><span class="nav-number">1.</span> <span class="nav-text">逻辑斯蒂分布，logit转换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">2.</span> <span class="nav-text">参考</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -1471,10 +1222,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
-
-
 
   
 
@@ -1504,28 +1251,6 @@
 
     
 
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitment({
-            id: window.location.pathname,
-            owner: 'ESblog',
-            repo: 'esblog.github.io',
-            
-            oauth: {
-            
-            
-                client_secret: '6dbf6ffc70aae144a5f8b6dbc22d37d7616e9873',
-            
-                client_id: '04d744b92792c6240a8f'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
     
 
 
@@ -1891,23 +1616,6 @@
 
   
   
-  <script type="text/javascript">
-  wpac_init = window.wpac_init || [];
-  wpac_init.push({widget: 'Rating', id: 14529,
-    el: 'wpac-rating',
-    color: 'fc6423'
-  });
-  (function() {
-    if ('WIDGETPACK_LOADED' in window) return;
-    WIDGETPACK_LOADED = true;
-    var mc = document.createElement('script');
-    mc.type = 'text/javascript';
-    mc.async = true;
-    mc.src = '//embed.widgetpack.com/widget.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-  })();
-  </script>
-
 
   
 
